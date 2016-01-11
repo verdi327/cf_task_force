@@ -1,0 +1,69 @@
+<!-- To see a full list of attributes availabile on @post in this template,
+enter that post slug here:  https://buttercms.com/docs/api/#!/posts/Blog_Post_retrieve
+
+You'll get a real-time response from our API. -->
+
+
+<!-- For maximum seo, use the 'seo_title' and 'meta_description' attributes on @post to set the <title> and <meta name="description">. Assuming you have content_for?(:head) in your main layout file you can do this: -->
+<% content_for :head do %>
+    <title><%= @post['seo_title'] %> | Your Site</title>
+    <meta name="description" content="<%= @post['meta_description'] %>">
+<% end %>
+
+
+<!-- This is the main body of the post page. -->
+<div class="post-preview">
+    <h2 class="post-title">
+        <%= @post['title'] %>
+    </h2>
+
+    <p class="post-meta">
+    Posted by 
+    <%= link_to("#{@post['author']['first_name']} #{@post['author']['last_name']}", 
+        blog_author_path(:author_slug => @post['author']['slug'])) %>
+     on 
+     <%= @post['published'] %>
+
+    <% @post['categories'].each do |category| %>
+        <span class="label label-default">
+            <%= link_to(category['name'], blog_category_path(:category_slug => category['slug'])) %>
+        </span>
+    <% end %>
+    </p>
+
+    <p class="post-body">
+        <%= @post['body'].html_safe %>
+    </p>
+</div>
+
+<ul class="pager">
+    <% if @post['previous_post'] %>
+        <li class="previous"><%= link_to("&larr; Previous post".html_safe, blog_post_path(:slug => @post['previous_post']['slug'])) %></li>
+    <% end %>
+
+    <% if @post['next_post'] %>
+        <li class="next"><%= link_to("Next post &rarr;".html_safe, blog_post_path(:slug => @post['next_post']['slug'])) %></li>
+    <% end %>
+</ul>
+
+<!-- 
+// For post comments, we recommend https://disqus.com/ 
+// Create a Disqus account and paste your embed code below.
+// Here's a sample
+<hr>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'XXXXXXXX';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+-->
+
+</div>
