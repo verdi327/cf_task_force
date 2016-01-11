@@ -21,6 +21,7 @@ gem 'buttercms'
 gem 'rails_12factor', group: :production
 gem 'puma'
 gem "font-awesome-rails"
+gem 'jquery-rails'
 
 
 # Use ActiveModel has_secure_password

@@ -12,6 +12,7 @@
 //
 //= require plugins/retina/retina.min 
 //= require jquery
+//= require jquery_ujs
 //= require bootstrap/bootstrap.min
 //= require plugins/jquery.easing.min
 //= require plugins/classie
