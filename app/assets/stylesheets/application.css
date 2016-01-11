@@ -11,7 +11,7 @@
  * file per style scope.
  *
  *= require bootstrap/bootstrap.min
- *= require font-awesome/css/font-awesome.min
+ *= require font-awesome
  *= require plugins/owl-carousel/owl.carousel
  *= require plugins/owl-carousel/owl.theme
  *= require plugins/owl-carousel/owl.transitions
