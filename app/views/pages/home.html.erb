@@ -60,7 +60,7 @@
                 <div class="about-carousel">
                     <div href="#profileModal1" data-toggle="modal">
                         <div class="item">
-                            <img src="/assets/people/ben-profile/cover.jpg" class="img-responsive" alt="">
+                            <img src="<%= asset_path('people/ben-profile/cover.jpg') %>" class="img-responsive" alt="">
                             <div class="caption">
                                 <h3>Benjamin Bunn</h3>
                                 <hr class="colored">
@@ -70,7 +70,7 @@
                     </div>
                     <div href="#profileModal2" data-toggle="modal">
                         <div class="item">
-                            <img src="/assets/people/michael-profile/cover.jpg" class="img-responsive" alt="">
+                            <img src="<%= asset_path('people/michael-profile/cover.jpg') %>" class="img-responsive" alt="">
                             <div class="caption">
                                 <h3>Michael Verdi</h3>
                                 <hr class="colored">
@@ -80,7 +80,7 @@
                     </div>
                     <div href="#profileModal3" data-toggle="modal">
                         <div class="item">
-                            <img src="/assets/people/courtney-profile/cover.jpg" class="img-responsive" alt="">
+                            <img src="<%= asset_path('people/courtney-profile/cover.jpg') %>" class="img-responsive" alt="">
                             <div class="caption">
                                 <h3>Courtney Bunn</h3>
                                 <hr class="colored">
@@ -93,8 +93,6 @@
         </div>
     </div>
 </section>
-<!-- <aside class="cta-quote" style="background-image: url('/assets/bg-aside.jpg');"> -->
-<!-- <aside class="cta-quote" style="background-image: url('/assets/bg/rowing.jpg');"> -->
 <aside class="cta-quote" style="background-image: url('http://crossfitredbank.com/wp-content/uploads/2013/05/cross-fit-red-bank-home-940x415B.jpg');">
     <div class="container wow fadeIn">
         <div class="row">
@@ -121,7 +119,7 @@
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="/assets/timeline/wodify-logo.png" alt="">
+                            <img class="img-circle img-responsive" src="<%= asset_path('timeline/wodify-logo.png') %>" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -134,7 +132,7 @@
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="/assets/timeline/workout.jpg" alt="">
+                            <img class="img-circle img-responsive" src="<%= asset_path('timeline/workout.jpg') %>" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -147,7 +145,7 @@
                     </li>
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="/assets/timeline/fundamentals.png" alt="">
+                            <img class="img-circle img-responsive" src="<%= asset_path('timeline/fundamentals.png') %>" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -160,7 +158,7 @@
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="/assets/timeline/group.jpg" alt="">
+                            <img class="img-circle img-responsive" src="<%= asset_path('timeline/group.jpg') %>" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -197,28 +195,28 @@
         <div class="row text-center content-row">
             <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".2s">
                 <div class="about-content">
-                    <img src="/assets/founders-club/money.svg" style="height:150px" alt="money icon">
+                    <img src="<%= asset_path('founders-club/money.svg') %>" style="height:150px" alt="money icon">
                     <h3>Discounted Dues</h3>
                     <p>As a thank you for joining early, we'll waive the foundation's course fee and lock you in at a monthly rate of $120.</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".4s">
                 <div class="about-content">
-                    <img src="/assets/founders-club/t-shirt.svg" style="height:150px" alt="t-shirt icon">
+                    <img src="<%= asset_path('founders-club/t-shirt.svg') %>" style="height:150px" alt="t-shirt icon">
                     <h3>Free T-Shirt</h3>
                     <p>One of a kind, silky smooth American Apparel t-shirt that has our logo on the front and your signup number on the back.</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".6s">
                 <div class="about-content">
-                    <img src="/assets/founders-club/fiesta.svg" style="height:150px" alt="fiesta icon">
+                    <img src="<%= asset_path('founders-club/fiesta.svg') %>" style="height:150px" alt="fiesta icon">
                     <h3>Quarterly Fiesta</h3>
                     <p>Every three months we'll get all the founding members together for a small fiesta.  Food, drink, music and good vibes provided.</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".8s">
                 <div class="about-content">
-                    <img src="/assets/founders-club/heart.svg"style="height:150px"  alt="heart icon">
+                    <img src="<%= asset_path('founders-club/heart.svg') %>"style="height:150px"  alt="heart icon">
                     <h3>Wall of Fame</h3>
                     <p>We've got a special spot in our gym where all the founding members names' are listed.  Street cred out the whazoo.</p>
                 </div>
@@ -239,17 +237,17 @@
         <div class="row content-row">
             <div class="col-md-4">
                 <h3>Google</h3>
-                <img src="/assets/reviews/google.jpg">
+                <img src="<%= asset_path('reviews/google.jpg') %>">
                 <p>(36 reviews)</p>
             </div>
             <div class="col-md-4">
                 <h3>Facebook</h3>
-                <img src="/assets/reviews/fb.jpg">
+                <img src="<%= asset_path('reviews/fb.jpg') %>">
                 <p>(128 reviews)</p>
             </div>
             <div class="col-md-4">
                 <h3>Yelp</h3>
-                <img src="/assets/reviews/google.jpg">
+                <img src="<%= asset_path('reviews/google.jpg') %>">
                 <p>(56 reviews)</p>
             </div>
         </div>
@@ -282,7 +280,7 @@
                                 <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
                                 <div class="testimonial-info">
                                     <div class="testimonial-img">
-                                        <img src="/assets/testimonials/1.jpg" class="img-circle img-responsive" alt="">
+                                        <img src="<%= asset_path('testimonials/1.jpg') %>" class="img-circle img-responsive" alt="">
                                     </div>
                                     <div class="testimonial-author">
                                         <span class="name">Jim Walker</span>
@@ -307,7 +305,7 @@
                                 <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
                                 <div class="testimonial-info">
                                     <div class="testimonial-img">
-                                        <img src="/assets/testimonials/1.jpg" class="img-circle img-responsive" alt="">
+                                        <img src="<%= asset_path('testimonials/1.jpg') %>" class="img-circle img-responsive" alt="">
                                     </div>
                                     <div class="testimonial-author">
                                         <span class="name">Jim Walker</span>
@@ -329,7 +327,6 @@
         </div>
     </div>
 </section>
-<!-- <section id="pricing" class="pricing" style="background-image: url('/assets/bg/pricing.jpg')"> -->
 <section id="pricing" class="pricing" style="background-image: url('http://cdn-media-2.lifehack.org/wp-content/files/2015/06/13472289015_c07dd61f24_z2.jpg')">
     <div class="container wow fadeIn">
         <div class="row text-center">
@@ -484,7 +481,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <img src="/assets/people/ben-profile/cover.jpg" class="img-responsive img-centered" alt="">
+                        <img src="<%= asset_path('people/ben-profile/cover.jpg') %>" class="img-responsive img-centered" alt="">
                         <h2>Benjamin Bunn</h2>
                         <hr class="colored">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
@@ -520,7 +517,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <img src="/assets/people/michael-profile/cover.jpg" class="img-responsive img-centered" alt="">
+                        <img src="<%= asset_path('people/michael-profile/cover.jpg') %>" class="img-responsive img-centered" alt="">
                         <h2>Michael Verdi</h2>
                         <hr class="colored">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
@@ -556,7 +553,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <img src="/assets/people/courtney-profile/cover.jpg" class="img-responsive img-centered" alt="">
+                        <img src="<%= asset_path('people/courtney-profile/cover.jpg') %>" class="img-responsive img-centered" alt="">
                         <h2>Courtney Bunn</h2>
                         <hr class="colored">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
