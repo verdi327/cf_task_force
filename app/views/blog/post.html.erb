@@ -1,3 +1,5 @@
+<div id="foo" data-id="fuckme"></div>
+
 <!-- To see a full list of attributes availabile on @post in this template,
 enter that post slug here:  https://buttercms.com/docs/api/#!/posts/Blog_Post_retrieve
 
@@ -6,9 +8,16 @@ You'll get a real-time response from our API. -->
 
 <!-- For maximum seo, use the 'seo_title' and 'meta_description' attributes on @post to set the <title> and <meta name="description">. Assuming you have content_for?(:head) in your main layout file you can do this: -->
 <% content_for :head do %>
-    <title><%= @post['seo_title'] %> | Your Site</title>
+    <title><%= @post['seo_title'] %> | CF Task Force</title>
     <meta name="description" content="<%= @post['meta_description'] %>">
 <% end %>
+
+<script type="text/javascript">
+    $(function(){
+        $("nav").removeClass().addClass("navbar navbar-inverse navbar-fixed-top")
+    });
+</script>
+
 
 
 <!-- This is the main body of the post page. -->

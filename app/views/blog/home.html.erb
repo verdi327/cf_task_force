@@ -1,3 +1,14 @@
-<%= render partial: "blog/post", collection: @recent_posts %>
+<header style="background-image: url('http://www.borisandcompany.com/wp-content/gallery/crossfit/01-crossfit.jpg');">
+    <div class="intro-content">
+        <div class="brand-name-intro">Blog<div>
+        <hr class="colored">
+        <div class="brand-name">Learn Up</div>
+    </div>
+</header>
 
-<%= render partial: "blog/pagers", locals: {next_page: @next_page, previous_page: @previous_page} %>
+<section>
+	<div class="container">
+		<%= render partial: "blog/post", collection: @recent_posts %>	
+		<%= render partial: "blog/pagers", locals: {next_page: @next_page, previous_page: @previous_page} %>
+	</div>
+</section>
