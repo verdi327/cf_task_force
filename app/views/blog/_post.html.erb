@@ -13,7 +13,7 @@
     on <%= post['published'] %>
 
     <% post['categories'].each do |category| %>
-    <span class="label label-default">
+    <span class="btn btn-outline-dark btn-label">
     <%= link_to(category['name'], blog_category_path(:category_slug => category['slug'])) %>
     </span>
     <% end %>

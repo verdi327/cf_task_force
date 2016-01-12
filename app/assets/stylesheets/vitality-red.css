@@ -1374,16 +1374,25 @@ body.vintage .testimonials .testimonials-carousel .owl-controls .owl-next {
   }
 }
 
-.about-us{
-  padding:0 30px;
-
+/*bootstrap / theme overrides*/
+.pager > li a {
+  border-radius:0;
 }
 
-.about-us h4{
-  text-align:left;
-  margin-top:20px;
+.btn-label{
+  font-size:12px;
+  padding:5px 9px;
+  margin-top:-2px;
 }
 
-.about-us p{
-  text-align:left;
+.post-meta{
+  font-style:italic;
+  font-weight:600;
+}
+
+h4.author-email{
+  text-transform: none;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 22px;
 }

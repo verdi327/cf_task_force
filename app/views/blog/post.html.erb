@@ -1,5 +1,3 @@
-<div id="foo" data-id="fuckme"></div>
-
 <!-- To see a full list of attributes availabile on @post in this template,
 enter that post slug here:  https://buttercms.com/docs/api/#!/posts/Blog_Post_retrieve
 
@@ -16,44 +14,49 @@ You'll get a real-time response from our API. -->
     $(function(){
         $("nav").removeClass().addClass("navbar navbar-inverse navbar-fixed-top")
     });
+    cbpAnimatedHeader.remove();
 </script>
 
 
+<section>
+    <div class="container">
+        <!-- This is the main body of the post page. -->
+        <div class="post-preview">
+            <h2 class="post-title">
+                <%= @post['title'] %>
+            </h2>
 
-<!-- This is the main body of the post page. -->
-<div class="post-preview">
-    <h2 class="post-title">
-        <%= @post['title'] %>
-    </h2>
+            <p class="post-meta">
+            Posted by 
+            <%= link_to("#{@post['author']['first_name']} #{@post['author']['last_name']}", 
+                blog_author_path(:author_slug => @post['author']['slug'])) %>
+             on 
+             <%= @post['published'] %>
 
-    <p class="post-meta">
-    Posted by 
-    <%= link_to("#{@post['author']['first_name']} #{@post['author']['last_name']}", 
-        blog_author_path(:author_slug => @post['author']['slug'])) %>
-     on 
-     <%= @post['published'] %>
+            <% @post['categories'].each do |category| %>
+                <span class="btn btn-outline-dark btn-label">
+                    <%= link_to(category['name'], blog_category_path(:category_slug => category['slug'])) %>
+                </span>
+            <% end %>
+            </p>
 
-    <% @post['categories'].each do |category| %>
-        <span class="label label-default">
-            <%= link_to(category['name'], blog_category_path(:category_slug => category['slug'])) %>
-        </span>
-    <% end %>
-    </p>
+            <p class="post-body">
+                <%= @post['body'].html_safe %>
+            </p>
+        </div>
 
-    <p class="post-body">
-        <%= @post['body'].html_safe %>
-    </p>
-</div>
+        <ul class="pager">
+            <% if @post['previous_post'] %>
+                <li class="previous"><%= link_to("&larr; Previous post".html_safe, blog_post_path(:slug => @post['previous_post']['slug'])) %></li>
+            <% end %>
 
-<ul class="pager">
-    <% if @post['previous_post'] %>
-        <li class="previous"><%= link_to("&larr; Previous post".html_safe, blog_post_path(:slug => @post['previous_post']['slug'])) %></li>
-    <% end %>
+            <% if @post['next_post'] %>
+                <li class="next"><%= link_to("Next post &rarr;".html_safe, blog_post_path(:slug => @post['next_post']['slug'])) %></li>
+            <% end %>
+        </ul>
+    </div>
+</section>
 
-    <% if @post['next_post'] %>
-        <li class="next"><%= link_to("Next post &rarr;".html_safe, blog_post_path(:slug => @post['next_post']['slug'])) %></li>
-    <% end %>
-</ul>
 
 <!-- 
 // For post comments, we recommend https://disqus.com/ 
@@ -74,5 +77,3 @@ You'll get a real-time response from our API. -->
     })();
 </script>
 -->
-
-</div>
