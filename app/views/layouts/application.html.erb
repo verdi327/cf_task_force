@@ -21,7 +21,7 @@
 </head>
 
 <%= render "shared/navbar" %>
-<body id="page-top">
+<body id="page-top" class="<%= controller_name %> <%= action_name %>">
   <%= yield %>
 </body>
 <%= render "shared/footer" %>

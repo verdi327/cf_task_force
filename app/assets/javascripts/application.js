@@ -13,6 +13,7 @@
 //= require plugins/retina/retina.min 
 //= require jquery
 //= require jquery_ujs
+//= require jquery-readyselector
 //= require bootstrap/bootstrap.min
 //= require plugins/jquery.easing.min
 //= require plugins/classie
@@ -28,3 +29,4 @@
 //= require plugins/jqBootstrapValidation
 //= require plugins/instafeed.min
 //= require vitality
+//= require home
