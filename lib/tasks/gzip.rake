@@ -1,5 +1,4 @@
 namespace :assets do
-  puts "About to gzip some files!"
   desc "Create .gz versions of assets"
   task :gzip => :environment do
     zip_types = /\.(?:css|html|js|otf|svg|txt|xml)$/

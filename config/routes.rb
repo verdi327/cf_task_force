@@ -5,8 +5,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'pages#home'
-  get '/wod' => 'pages#wod'
-  get '/schedule' => 'pages#schedule'
+  get '/wod'           => 'pages#wod'
+  get '/schedule'      => 'pages#schedule'
+  post '/contact_form' => 'contact_form#create'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
