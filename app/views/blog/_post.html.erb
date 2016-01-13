@@ -3,7 +3,7 @@
 <div class="post-preview">
   <!-- Display the post title in a h2 tag -->
   <h2 class="post-title">
-    <%= link_to(post['title'], blog_post_path(:slug => post['slug'])) %>
+    <%= link_to(post['title'], blog_post_path(:slug => post['slug'], :anchor => "disqus_thread")) %>
   </h2>
 
   <!-- Display the post byline (author, categories, publish date) -->
