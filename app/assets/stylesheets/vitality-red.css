@@ -1404,3 +1404,11 @@ h4.author-email{
 .inverse:hover{
   color:#ef4035;
 }
+
+/*contact-us*/
+@media (min-width: 400px) {
+  .contact-us-form{margin-top:50px;}
+}
+@media (min-width: 1025px) {
+  .contact-us-form{margin-top:0px;}
+}
