@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get '/wod'           => 'pages#wod'
   get '/schedule'      => 'pages#schedule'
+  get '/contact-us'    => 'pages#contact_us'
   post '/contact_form' => 'contact_form#create'
 
   # Example of regular route:

@@ -4,4 +4,5 @@ class PagesController < ApplicationController
 	end
 	def wod;end
 	def schedule;end
+	def contact_us;end
 end

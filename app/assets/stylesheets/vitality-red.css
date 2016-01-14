@@ -1396,3 +1396,11 @@ h4.author-email{
   font-style: italic;
   font-size: 22px;
 }
+
+.inverse {
+  color:white;
+}
+
+.inverse:hover{
+  color:#ef4035;
+}
