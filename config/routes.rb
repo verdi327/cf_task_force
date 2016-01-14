@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   namespace :admin do 
-    resources :coaches
+    resources :coaches do 
+      resources :images, :only => [:create, :destroy]
+    end
   end
   
   mount Buttercms::Engine => '/blog'

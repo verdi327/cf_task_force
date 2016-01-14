@@ -23,7 +23,7 @@ gem 'puma'
 gem "font-awesome-rails"
 gem 'jquery-rails'
 gem "carrierwave", :github => "carrierwaveuploader/carrierwave"
-
+gem "fog-aws"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
