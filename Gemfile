@@ -22,6 +22,7 @@ gem 'rails_12factor', group: :production
 gem 'puma'
 gem "font-awesome-rails"
 gem 'jquery-rails'
+gem "carrierwave", :github => "carrierwaveuploader/carrierwave"
 
 
 # Use ActiveModel has_secure_password

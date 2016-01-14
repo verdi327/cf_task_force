@@ -34,6 +34,12 @@
     </div>
   </div>
 
+  <div class="row control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <%= f.label :images %><br>
+      <%= f.file_field :images, multiple: true, class: "form-control" %>
+    </div>
+  </div>
   
   <div class="row" style="margin-top:15px">
     <%= f.submit submit_text, class:  "btn btn-outline-dark" %>
