@@ -57,36 +57,18 @@
         <div class="row content-row">
             <div class="col-lg-12">
                 <div class="about-carousel">
-                    <div href="#profileModal1" data-toggle="modal">
-                        <div class="item">
-                            <img src="<%= asset_path('people/ben-profile/cover.jpg') %>" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Benjamin Bunn</h3>
-                                <hr class="colored">
-                                <p>Founder | Head Coach</p>
+                    <% @coaches.each do |coach| %>
+                        <div href="#profileModal-<%=coach.id%>" data-toggle="modal">
+                            <div class="item">
+                                <img src="<%= coach.images[0].url %>" class="img-responsive" alt="">
+                                <div class="caption">
+                                    <h3><%= coach.name %></h3>
+                                    <hr class="colored">
+                                    <p><%= coach.title %></p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div href="#profileModal2" data-toggle="modal">
-                        <div class="item">
-                            <img src="<%= asset_path('people/michael-profile/cover.jpg') %>" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Michael Verdi</h3>
-                                <hr class="colored">
-                                <p>Founder | Coach</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div href="#profileModal3" data-toggle="modal">
-                        <div class="item">
-                            <img src="<%= asset_path('people/courtney-profile/cover.jpg') %>" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Courtney Bunn</h3>
-                                <hr class="colored">
-                                <p>Coach</p>
-                            </div>
-                        </div>
-                    </div>
+                        </div>    
+                    <% end %>
                 </div>
             </div>
         </div>
@@ -466,7 +448,8 @@
 </section>
 
 <!-- profile modals -->
-<%= render "profile_modal_1" %>
-<%= render "profile_modal_2" %>
-<%= render "profile_modal_3" %>
+<% @coaches.each do |coach| %>
+    <%= render partial: "profile_modal", locals: {coach: coach} %>
+<% end %>
+
 
