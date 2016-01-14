@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 	def home
-		@coaches = Coach.all
+		@coaches = Coach.order(priority: :asc)
 	end
 	def wod;end
 	def schedule;end
