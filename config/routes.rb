@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     resources :coaches do 
       resources :images, :only => [:create, :destroy]
     end
+    resources :wods
   end
   
   mount Buttercms::Engine => '/blog'

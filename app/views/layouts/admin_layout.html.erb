@@ -22,6 +22,13 @@
 
 <body class="<%= controller_name %> <%= action_name %>">
   <div class="container">
+    <% flash.each do |key, value| %>
+      <% css_class = key == "notice" ? "info" : "danger" %>
+      <div class="alert alert-<%= css_class %> alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <%= value %>
+      </div>
+    <% end %>
     <%= yield %>
   </div>
 </body>

@@ -1,0 +1,49 @@
+<% form_route = action_name == "edit" ? admin_wod_path(@wod) : admin_wods_path %>
+<% submit_text = action_name == "edit" ? "Update WOD" : "Create WOD" %>
+
+<%= form_for(@wod, :url => form_route) do |f| %>
+  <% if @wod.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wod.errors.count, "error") %> prohibited this wod from being saved:</h2>
+
+      <ul>
+      <% @wod.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <%= f.label :name %><br>
+      <% if params['date'] %>
+        <%= f.text_field :name, class: "form-control", placeholder: "Name", value: "WOD-#{params['date']}" %>
+      <% else %>
+        <%= f.text_field :name, class: "form-control", placeholder: "Name", value: @wod.name %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <%= f.label :publish_on %><br>
+      <% if params["date"]  %>
+        <input type="date" value=<%=params["date"]%> name="wod[publish_on]" id="wod_publish_on" placeholder="Publish Date">
+      <% else %>
+        <input type="date" value=<%=@wod.publish_on%> name="wod[publish_on]" id="wod_publish_on" placeholder="Publish Date">
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row control-group">
+    <div class="form-group" style="margin-top:10px">
+      <%= f.label :image %><br>
+      <%= f.file_field :image %>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:15px">
+    <%= f.submit submit_text, class:  "btn btn-outline-dark" %>
+  </div>
+<% end %>

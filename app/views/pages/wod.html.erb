@@ -16,28 +16,15 @@
             </div>
         </div>
         <div class="row content-row">
-            <div class="col-md-4">
-                <img src="https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/s640x640/sh0.08/e35/1515658_206847722993224_1010073291_n.jpg" style="height:auto;max-width:100%;">
-                
-            </div>
-            <div class="col-md-4">
-                <img src="https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/s640x640/sh0.08/e35/1515658_206847722993224_1010073291_n.jpg" style="height:auto;max-width:100%;">
-            </div>
-            <div class="col-md-4">
-                <img src="https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/s640x640/sh0.08/e35/1515658_206847722993224_1010073291_n.jpg" style="height:auto;max-width:100%;">
-            </div>
-        </div>
-        <div class="row content-row">
-            <div class="col-md-4">
-                <img src="https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/s640x640/sh0.08/e35/1515658_206847722993224_1010073291_n.jpg" style="height:auto;max-width:100%;">
-                
-            </div>
-            <div class="col-md-4">
-                <img src="https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/s640x640/sh0.08/e35/1515658_206847722993224_1010073291_n.jpg" style="height:auto;max-width:100%;">
-            </div>
-            <div class="col-md-4">
-                <img src="https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/s640x640/sh0.08/e35/1515658_206847722993224_1010073291_n.jpg" style="height:auto;max-width:100%;">
-            </div>
+            <% @wods.each_slice(3) do |grouped_wods| %>
+                <div class="row wod-group">
+                    <% grouped_wods.each do |wod| %>
+                        <div class="col-md-4">
+                            <%= image_tag(wod.image.url, class: "img img-responsive") %>
+                        </div>
+                    <% end %>
+                </div>
+            <% end %>
         </div>
     </div>
 </section>

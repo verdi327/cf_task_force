@@ -25,6 +25,7 @@ gem 'jquery-rails'
 gem "carrierwave", :github => "carrierwaveuploader/carrierwave"
 gem "fog-aws"
 gem 'mailgun_rails'
+gem "simple_calendar", "~> 2.0"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

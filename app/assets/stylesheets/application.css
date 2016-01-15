@@ -18,4 +18,6 @@
  *= require plugins/magnific-popup
  *= require plugins/background
  *= require vitality-red
+ *= require simple_calendar
+ *= require admin/base
  */

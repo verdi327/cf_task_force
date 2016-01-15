@@ -1,0 +1,17 @@
+<p>
+  <strong>Name:</strong>
+  <%= @wod.name %>
+</p>
+
+<p>
+  <strong>Publish on:</strong>
+  <%= @wod.publish_on %>
+</p>
+
+<p><strong>Image</strong></p>
+<p><%= image_tag(@wod.image.url) %></p>
+
+<div class="nav-actions">
+	<%= link_to 'Edit', edit_admin_wod_path(@wod) %> |
+	<%= link_to 'Back', admin_wods_path %>
+</div>

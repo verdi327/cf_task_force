@@ -42,9 +42,9 @@
   </div>
 
   <div class="row control-group">
-    <div class="form-group col-xs-12 floating-label-form-group controls">
-      <%= f.label :images %><br>
-      <%= f.file_field :images, multiple: true, class: "form-control" %>
+    <div class="form-group image-group">
+      <%= f.label :images %> (can upload multiple)<br>
+      <%= f.file_field :images, multiple: true %>
     </div>
   </div>
   
