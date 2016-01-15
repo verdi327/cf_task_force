@@ -1,5 +1,7 @@
 <h1>Listing Coaches</h1>
 
+<%= link_to 'New Coach', new_admin_coach_path, class: "btn btn-outline-dark", style: "margin:15px 0px" %>
+
 <table class="table">
   <thead>
     <tr>
@@ -27,7 +29,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Coach', new_admin_coach_path, class: "btn btn-outline-dark" %>
