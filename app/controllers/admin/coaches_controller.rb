@@ -1,6 +1,5 @@
-class Admin::CoachesController < ApplicationController
+class Admin::CoachesController < Admin::BaseController
   before_action :set_coach, only: [:show, :edit, :update, :destroy]
-  layout "admin_layout"
 
   # GET /coaches
   # GET /coaches.json

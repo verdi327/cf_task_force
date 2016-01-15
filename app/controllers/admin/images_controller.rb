@@ -1,4 +1,4 @@
-class Admin::ImagesController < ApplicationController
+class Admin::ImagesController < Admin::BaseController
 	before_action :set_coach
 
 	def create

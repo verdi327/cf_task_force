@@ -1,6 +1,5 @@
-class Admin::WodsController < ApplicationController
+class Admin::WodsController < Admin::BaseController
   before_action :set_wod, only: [:show, :edit, :update, :destroy]
-  layout "admin_layout"
   # GET /wods
   # GET /wods.json
   def index

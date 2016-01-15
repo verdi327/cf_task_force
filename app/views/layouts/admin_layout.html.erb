@@ -21,6 +21,14 @@
 </head>
 
 <body class="<%= controller_name %> <%= action_name %>">
+  <nav class="navbar navbar-outline">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <%= link_to "Admin Home", admin_path, class: "navbar-brand" %>
+      </div>
+    </div>
+  </nav>
+
   <div class="container">
     <% flash.each do |key, value| %>
       <% css_class = key == "notice" ? "info" : "danger" %>
