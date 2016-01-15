@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/schedule'      => 'pages#schedule'
   get '/contact-us'    => 'pages#contact_us'
   post '/contact_form' => 'contact_form#create'
+  get '/admin'         => 'admin/base#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
