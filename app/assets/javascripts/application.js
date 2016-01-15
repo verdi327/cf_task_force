@@ -30,3 +30,4 @@
 //= require plugins/instafeed.min
 //= require vitality
 //= require home
+//= require wod

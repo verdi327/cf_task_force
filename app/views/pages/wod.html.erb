@@ -15,18 +15,16 @@
                 <hr class="colored">
             </div>
         </div>
-        <div class="row content-row">
-            <% @wods.each_slice(3) do |grouped_wods| %>
-                <div class="row wod-group">
-                    <% grouped_wods.each do |wod| %>
-                        <div class="col-md-4">
-                            <%= image_tag(wod.image.url, class: "img img-responsive") %>
-                        </div>
-                    <% end %>
-                </div>
-            <% end %>
+        <div class="row content-row" id="wods">
+            <%= render partial: "wods", locals: {wods: @wods} %>
         </div>
+        <div class="row content-row text-center">
+            <div class="col-lg-12">
+                <%= link_to wod_loader_path(end_date: @end_date), class: "btn btn-lg btn-outline-dark", remote: true, id: "btn-loader" do %>
+                    See More Wods
+                <% end %>
+                <p id="reset-link" style="display:none"><%= link_to "reset", "/wod" %></p>
+            </div>
+        </div>  
     </div>
 </section>
-
-
