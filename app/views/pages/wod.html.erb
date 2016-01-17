@@ -1,3 +1,11 @@
+<% content_for :head do %>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cftaskforce">
+    <meta name="twitter:title" content="Today's WOD">
+    <meta name="twitter:description" content="Word hard, get results and make friends while you're doing it - that's what we're about.">
+    <meta name="twitter:image" content="<%=@todays_wod.image.url%>">
+<% end %>
+
 <header style="background-image: url('http://assets-s3.mensjournal.com/img/essential/crossfit-best-calorie-burning-workouts/618_348_crossfit-best-calorie-burning-workouts.jpg');">
     <div class="intro-content">
         <div class="brand-name-intro">WOD Blog<div>
@@ -15,12 +23,26 @@
                 <hr class="colored">
             </div>
         </div>
-        <div class="row content-row" id="wods">
-            <%= render partial: "wods", locals: {wods: @wods} %>
+        
+        <div class="row text-center" id="todays-wod">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="social-share-button" data-title="Today's WOD @ CrossFit Task Force" data-url="<%=request.url%>" data-desc="" data-popup="true" data-via="">
+                    <a rel="nofollow " data-site="twitter" class="social-share-button-twitter" onclick="return SocialShareButton.share(this);" title="Share to Twitter" href="#"><%= fa_icon "twitter", class: "fa-2x" %></a>
+                    <a rel="nofollow " data-site="facebook" class="social-share-button-facebook" onclick="return SocialShareButton.share(this);" title="Share to Facebook" href="#"><%= fa_icon "facebook", class: "fa-2x" %></a>
+                </div>
+
+                <%= image_tag(@todays_wod.image.url, class: "img img-responsive center") %>
+            </div>
+        </div>
+        <div class="row content-row text-center" id="previous-wods" style="display:none">
+            <h3>Previous WODs</h3>
+            <div class="col-md-12">
+                <!-- previous wods load here -->
+            </div>
         </div>
         <div class="row content-row text-center">
             <div class="col-lg-12">
-                <%= link_to wod_loader_path(end_date: @end_date), class: "btn btn-lg btn-outline-dark", remote: true, id: "btn-loader" do %>
+                <%= link_to wod_loader_path(end_date: "1"), class: "btn btn-lg btn-outline-dark", remote: true, id: "btn-loader" do %>
                     See More Wods
                 <% end %>
                 <p id="reset-link" style="display:none"><%= link_to "reset", "/wod" %></p>

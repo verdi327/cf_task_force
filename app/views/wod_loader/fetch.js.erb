@@ -1,4 +1,5 @@
-$("#wods").append("<%= escape_javascript(render partial: 'pages/wods', locals: {wods: @wods}) %>");
+$("#previous-wods").show();
+$("#previous-wods").append("<%= escape_javascript(render partial: 'pages/wods', locals: {wods: @wods}) %>");
 $("#btn-loader").attr("href", "<%=escape_javascript(@url)%>");
 if("<%= @wods.empty?%>" === "true"){
 	$("#btn-loader").hide();

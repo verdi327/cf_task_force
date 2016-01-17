@@ -31,3 +31,4 @@
 //= require vitality
 //= require home
 //= require wod
+//= require social-share-button

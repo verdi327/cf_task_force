@@ -26,6 +26,8 @@ gem "carrierwave", :github => "carrierwaveuploader/carrierwave"
 gem "fog-aws"
 gem 'mailgun_rails'
 gem "simple_calendar", "~> 2.0"
+gem 'social-share-button'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
