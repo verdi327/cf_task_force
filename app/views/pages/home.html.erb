@@ -23,9 +23,9 @@
         <div class="row content-row">
             <div class="col-md-8 col-md-offset-2">
                 <p>
-                    CrossFit Task Force is the realization of a long time dream of opening a world class strength and conditioning facility in the heart of Tampa. The founders, Benjamin Bunn and Michael Verdi, are excited to put their 20+ years of combined CrossFit and sports performance training to work for you. Our focus is, and always will be, on providing an amazing athlete experience. We want to create a community where everyone feels welcome and achieves their desired goals.
+                    Cigar City CrossFit is the realization of a long time dream of opening a world class strength and conditioning facility in the heart of Tampa. The founders, Benjamin Bunn and Michael Verdi, are excited to put their 20+ years of combined CrossFit and sports performance training to work for you. Our focus is, and always will be, on providing an amazing athlete experience. We want to create a community where everyone feels welcome and achieves their desired goals.
                 </p>
-                <p>We would be honored to have you join CrossFit Task Force as a founding member. Bring your grit and enthusiasm, together we’ll build a community that will learn and grow together.</p>
+                <p>We would be honored to have you join Cigar City CrossFit as a founding member. Bring your grit and enthusiasm, together we’ll build a community that will learn and grow together.</p>
                 <div class="row founders" style="">
                     <div class="col-md-6 founder">
                         <img class="img-circle profile-sm" src="https://cftaskforce.files.wordpress.com/2016/01/benn-2-cropped.jpg" alt="">
@@ -96,7 +96,7 @@
                 <span class="quote">Every pro was once an <span class="text-primary">amateur</span>. Every <span class="text-primary">expert</span> was once a <span class="text-primary">beginner</span>. So dream big and <span class="text-primary">start now</span>.</span>
 
                 <hr class=" colored">
-                <a class="btn btn-outline-light page-scroll" href="#contact">Become a Founding Member Today</a>
+                <%= link_to "Become a Founding Member Today", signup_path, class: "btn btn-outline-light"%>
             </div>
         </div>
     </div>
@@ -119,10 +119,10 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Fill Out An E-Waiver</h4>
+                                <h4>Create an Account</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Save some trees and time by filling out our e-waiver before coming into class.</p>
+                                <p class="text-muted">Save some trees and time by creating an account online. We use FrontDesk to simplify all your account management needs.</p>
                             </div>
                         </div>
                     </li>
@@ -135,7 +135,7 @@
                                 <h4>Free Workout With Us</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Send an email to schedule an intro class. You'll get to see our facility, meet our community and get a workout in.</p>
+                                <p class="text-muted">Sign up for a free intro class via FrontDesk. You'll get to see our facility, meet our community and get a workout in.</p>
                             </div>
                         </div>
                     </li>
@@ -148,7 +148,7 @@
                                 <h4>Begin the Fundamentals Program</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">We require all our new members to go through our Fundamentals Program. For $120 dollars you get six hour long private training sessions to prepare you for our group classes. Novices learn the basics, experts perfect their technique.</p>
+                                <p class="text-muted">We require all our new members to go through our Fundamentals Program. For $120 dollars you get six one hour long small group training sessions to prepare you for our group classes. Novices learn the basics, experts perfect their technique.</p>
                             </div>
                         </div>
                     </li>
@@ -166,7 +166,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <a href="#">
+                        <a href="<%=signup_path%>">
                             <div class="timeline-image">
                                 <h4>Let's<br>Get<br>Started!</h4>
                             </div>    
@@ -220,7 +220,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <a class="btn btn-lg btn-outline-dark" href="#contact">Sign Me Up!</a>
+                <%= link_to "Sign Me Up!", signup_path, class: "btn btn-lg btn-outline-dark" %>
             </div>
         </div>
         
@@ -285,7 +285,6 @@
                 <hr class="colored">
                 <p class="pricing-subtext">Size up our packages and see what works best for you</p>
                 <p>Active Duty Military?  Inquire about our Military Rate</p>
-                
             </div>
         </div>
         <div class="row content-row">
@@ -302,7 +301,7 @@
                         <li class="list-group-item">Monthly Mentoring</li>
                         <li class="list-group-item">Nutrition Coaching</li>
                     </ul>
-                    <a href="#" class="btn btn-outline-dark">Sign Up</a>
+                    <%= link_to "Sign Up", signup_path, class: "btn btn-outline-dark"%>
                 </div>
             </div>
             <div class="col-md-3">
@@ -318,7 +317,7 @@
                         <li class="list-group-item">Monthly Mentoring</li>
                         <li class="list-group-item">Nutrition Coaching</li>
                     </ul>
-                    <a href="#" class="btn btn-outline-dark">Sign Up</a>
+                    <%= link_to "Sign Up", signup_path, class: "btn btn-outline-dark"%>
                 </div>
             </div>
             <div class="col-md-3">
@@ -334,7 +333,7 @@
                         <li class="list-group-item">Monthly Mentoring</li>
                         <li class="list-group-item">Nutrition Coaching</li>
                     </ul>
-                    <a href="#" class="btn btn-outline-dark">Sign Up</a>
+                    <%= link_to "Sign Up", signup_path, class: "btn btn-outline-dark"%>
                 </div>
             </div>
             <div class="col-md-3">
@@ -350,7 +349,7 @@
                         <li class="list-group-item">Monthly Mentoring</li>
                         <li class="list-group-item">Nutrition Coaching</li>
                     </ul>
-                    <a href="#" class="btn btn-outline-dark">Sign Up</a>
+                    <%= link_to "Sign Up", signup_path, class: "btn btn-outline-dark"%>
                 </div>
             </div>
         </div>

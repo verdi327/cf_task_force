@@ -306,12 +306,11 @@ header .brand-name-subtext {
   font-weight: 300;
 }
 header img {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 400px;
+  max-height: 400px;
 }
 header .intro-text{
   text-transform: uppercase;
-  margin-top:-100px;
 }
 header .scroll-down {
   /*position: absolute;
@@ -352,7 +351,7 @@ header .scroll-down .btn:hover {
     width: 50%;
     margin: auto;
     position: absolute;
-    top: 50%;
+    top: 56%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -367,8 +366,8 @@ header .scroll-down .btn:hover {
     line-height: 30px;
   }
   header img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 400px;
+    max-height: 400px;
   }
 }
 @media (min-width: 1025px) {

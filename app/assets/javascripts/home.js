@@ -56,7 +56,7 @@ $(".pages.home").ready(function() {
   var instagramClientId = $("#insta-id").data("id")
   var feed = new Instafeed({
       get: 'user',
-      userId: '173751168',
+      userId: '2263654386',
       clientId: instagramClientId,
       resolution: 'low_resolution',
       limit: 21,
