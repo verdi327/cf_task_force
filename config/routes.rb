@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   post '/contact_form' => 'contact_form#create'
   get '/admin'         => 'admin/base#index'
   get '/wod_loader'    => 'wod_loader#fetch'
+  get '/signup'        => 'pages#signup'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

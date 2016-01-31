@@ -31,4 +31,5 @@
 //= require vitality
 //= require home
 //= require wod
+//= require signup
 //= require social-share-button
