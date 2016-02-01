@@ -5,6 +5,9 @@ class PagesController < ApplicationController
 	def wod
 		# grab the last 8, hopefully we've added a wod in the last 8 days
 		@todays_wod = Wod.where(publish_on: (8.days.ago.to_date)..(Date.today)).order("publish_on DESC").first
+		if @todays_wod.nil?
+			@todays_wod = OpenStruct.new(image: OpenStruct.new(url: "https://cftaskforce.files.wordpress.com/2016/01/test-white-3.jpg"))
+		end
 	end
 	
 	def schedule;end
