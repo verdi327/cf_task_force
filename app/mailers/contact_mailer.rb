@@ -1,5 +1,5 @@
 class ContactMailer < ApplicationMailer
-	default from: 'contact-form@cftaskforce.com'
+	default from: 'contact-form@cigarcitycrossfit.com'
 	
 	def info_email(params)
 		# keys - name, phone, email, message
@@ -7,6 +7,6 @@ class ContactMailer < ApplicationMailer
 		@phone = params[:phone]
 		@email = params[:email]
 		@message = params[:message]
-	  mail(to: 'info@cftaskforce.com', subject: "Contact Form Entry from #{@name}")
+	  mail(to: 'info@cigarcitycrossfit.com', subject: "Contact Form Entry from #{@name}")
 	end
 end
