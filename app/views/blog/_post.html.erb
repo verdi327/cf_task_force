@@ -19,9 +19,11 @@
     <% end %>
   </p>
     
-  <p>
-    <%= link_to(post['title'], blog_post_path(:slug => post['slug'], :anchor => "disqus_thread")) %>
-  </p>
+  <!-- This should add total comments to page, but the anchor isn't getting recognized, will -->
+  <!-- fix at some point -->
+  <!-- <p>
+    <%#= link_to(post['title'], blog_post_path(:slug => post['slug'], :anchor => "disqus_thread")) %>
+  </p> -->
 
   <p class="post-summary">
     <!-- Featured images don't have to be used but can add a nice visual to your posts. 
