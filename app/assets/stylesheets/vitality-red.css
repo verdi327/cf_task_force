@@ -279,6 +279,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   padding: 100px 0;
+  min-width:100%;
 }
 header .intro-content {
   color: white;
