@@ -13,4 +13,5 @@ class PagesController < ApplicationController
 	def schedule;end
 	def contact_us;end
 	def signup;end
+	def sitemap;end
 end

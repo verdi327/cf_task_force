@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get '/admin'         => 'admin/base#index'
   get '/wod_loader'    => 'wod_loader#fetch'
   get '/signup'        => 'pages#signup'
+  get '/sitemap'       => 'pages#sitemap'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

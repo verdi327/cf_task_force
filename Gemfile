@@ -27,6 +27,7 @@ gem "fog-aws"
 gem 'mailgun_rails'
 gem "simple_calendar", "~> 2.0"
 gem 'social-share-button'
+gem 'sitemap_generator'
 
 
 # Use ActiveModel has_secure_password
