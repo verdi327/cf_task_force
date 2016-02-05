@@ -5,8 +5,8 @@ You'll get a real-time response from our API. -->
 
 
 <!-- For maximum seo, use the 'seo_title' and 'meta_description' attributes on @post to set the <title> and <meta name="description">. Assuming you have content_for?(:head) in your main layout file you can do this: -->
-<% content_for :head do %>
-    <title><%= @post['seo_title'] %></title>
+<% content_for :head_top do %>
+    <title>Cigar City CrossFit - <%= @post['seo_title'] %></title>
     <meta name="description" content="<%= @post['meta_description'] %>">
 <% end %>
 
