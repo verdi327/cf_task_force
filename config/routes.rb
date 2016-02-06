@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'errors/file_not_found'
+
+  get 'errors/unprocessable'
+
+  get 'errors/internal_server_error'
+
   namespace :admin do 
     resources :coaches do 
       resources :images, :only => [:create, :destroy]
@@ -20,6 +26,9 @@ Rails.application.routes.draw do
   get '/wod_loader'    => 'wod_loader#fetch'
   get '/signup'        => 'pages#signup'
   get '/sitemap'       => 'pages#sitemap'
+  match '/404', to: 'errors#file_not_found', via: :all
+  match '/422', to: 'errors#unprocessable', via: :all
+  match '/500', to: 'errors#internal_server_error', via: :all
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

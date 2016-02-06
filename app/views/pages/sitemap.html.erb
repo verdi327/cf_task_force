@@ -13,23 +13,20 @@
 
 <section>
     <div class="container-fluid">
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <h2>All the important links</h2>
-                <hr class="colored">
-            </div>
-        </div>
         <div class="row content-row">
         	<div class="col-lg-12" style="text-align:center">
+                <h2>Top Level Navigation Links</h2>
                 <h3><%= link_to "About Us", "/" %></h3>
                 <h3><%= link_to "WOD Blog", wod_path %></h3>
                 <h3><%= link_to "Workout Schedule", schedule_path %></h3>
+                <h3><%= link_to "Contact Us", contact_us_path %></h3>
+                <h2>Blog Related Links</h2>
                 <h3><%= link_to "Blog", "/blog" %></h3>
                 <h3><%= link_to "Blog RSS", "/blog/rss" %></h3>
                 <h3><%= link_to "Blog Atom", "/blog/atom" %></h3>
                 <h3><%= link_to "Benjamin Bunn Blog Posts", "/blog/author/benjamin-bunn" %></h3>
                 <h3><%= link_to "Michael Verdi Blog Posts", "/blog/author/michael-verdi" %></h3>
-        		<h3><%= link_to "Contact Us", contact_us_path %></h3>
+        		
         	</div>
         </div>
     </div>
