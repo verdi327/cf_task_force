@@ -7,10 +7,6 @@ html,
 body {
   height: 100%;
 }
-@media (max-width: 400px) {
-  body::-webkit-scrollbar{width:0px;}
-}
-
 .img-centered {
   margin: 0 auto;
 }
