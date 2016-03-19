@@ -1421,3 +1421,35 @@ h4.author-email{
   margin-left:0px;
   margin-bottom:25px;
 }
+
+.vendor-carousel .owl-controls {
+  margin-top: 0;
+}
+.vendor-carousel .owl-controls .owl-prev,
+.vendor-carousel .owl-controls .owl-next {
+  text-align: center;
+  position: absolute;
+  height: 60px;
+  width: 40px;
+  border-radius: 0 !important;
+  line-height: 50px;
+  font-size: 30px !important;
+  margin: auto 0 !important;
+  top: 0;
+  bottom: 0;
+  background-color: #ef4035 !important;
+  color: white !important;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vendor-carousel .owl-controls .owl-prev:hover,
+.vendor-carousel .owl-controls .owl-next:hover {
+  opacity: 1;
+}
+.vendor-carousel .owl-controls .owl-prev {
+  left: 15px;
+}
+.vendor-carousel .owl-controls .owl-next {
+  right: 15px;
+}

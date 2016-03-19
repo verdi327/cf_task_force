@@ -34,3 +34,4 @@
 //= require wod
 //= require signup
 //= require social-share-button
+//= require grand_opening

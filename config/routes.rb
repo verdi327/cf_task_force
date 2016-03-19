@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   get '/wod_loader'    => 'wod_loader#fetch'
   get '/signup'        => 'pages#signup'
   get '/sitemap'       => 'pages#sitemap'
+  get '/grand-opening' => 'pages#grand_opening'
   match '/404', to: 'errors#file_not_found', via: :all
   match '/422', to: 'errors#unprocessable', via: :all
   match '/500', to: 'errors#internal_server_error', via: :all
