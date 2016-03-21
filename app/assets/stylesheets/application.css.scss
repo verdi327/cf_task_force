@@ -21,4 +21,21 @@
  *= require simple_calendar
  *= require admin/base
  *= require pages
+ *= require grand-opening
  */
+
+a.banner{
+	text-align:center;
+	background:#ef4035;
+	color:white;
+	display:block;
+	padding:10px;
+	z-index:1000;
+	margin-top:-18px
+}
+
+@media (max-width: 481px) {
+  a.banner{
+  	margin-top:0px !important;
+  }
+}

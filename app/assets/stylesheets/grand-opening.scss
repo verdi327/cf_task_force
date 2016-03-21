@@ -1,0 +1,22 @@
+#phone_number{
+	color:black;
+	width: 30%;
+  font-size: 25px;
+  height: 46px;
+}
+
+input.btn{
+	margin-top:-7px;
+}
+
+.vendors{
+	margin-top:50px;
+	img#logo-2{margin-top:-42px}
+	img#logo-5{margin-top:-35px}
+	img#logo-6{margin-top:-30px}
+	a.btn{margin-top:20px}
+}
+@media (max-width: 481px) {
+  img#logo-2{margin-top:0px !important;}
+  img#logo-1{margin-left:50px !important;}
+}

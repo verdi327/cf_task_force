@@ -1,11 +1,9 @@
 $(".pages.grand_opening").ready(function() {
-	$(".vendor-carousel").owlCarousel({
-	    items: 5,
-	    navigation: true,
-	    pagination: false,
-	    navigationText: [
-	        "<i class='fa fa-angle-left'></i>",
-	        "<i class='fa fa-angle-right'></i>"
-	    ],
-	});
+	$("a.banner").hide();
+	$("#phone_number").mask("(999) 999-9999");
+
+	$("form[data-remote]").on("ajax:complete", function(e, data, status, xhr){
+		$("#phoneModal").modal("hide");
+		alert("All Set! We'll see you April 2nd");
+	})
 });

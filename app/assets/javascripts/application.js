@@ -29,6 +29,7 @@
 //= require contact_me
 //= require plugins/jqBootstrapValidation
 //= require plugins/instafeed.min
+//= require plugins/masked_input
 //= require vitality
 //= require home
 //= require wod
