@@ -11,7 +11,7 @@
 		<div class="intro-text">
 			<h1>Music. Food. Beer.</h1>
 			<h3>Come celebrate the grand opening of Tampa's newest CrossFit gym</h3>
-			<h3>Show up to get sweaty and stay after for music, food, free beer and good vibes </h3>
+			<h3>Show up to get sweaty and stay after for music, food, free beer and good vibes</h3>
 		</div>
 	</div>
 	<div class="container-fluid text-center" style="margin-top:55px">	
@@ -34,9 +34,6 @@
 				<img src="http://mediad.publicbroadcasting.net/p/wjct/files/201310/florida_national_guard_logo.jpg" id="logo-6" class="img-responsive" alt="vendor-logo">
 			</div>
 			<div class="col-lg-6 col-lg-offset-3" id="phone-btn">
-				<a href="#phoneModal" data-toggle="modal" class="btn btn-outline-dark">
-				    Receive a Text Message Reminder
-				</a> 
 				<a href= "https://www.facebook.com/events/1100074323389615/permalink/1104380139625700/" target="_blank" class="btn btn-outline-dark">
 				    Check Out the Facebook Event
 				</a> 
@@ -45,7 +42,7 @@
 	</div>
 </section>
 
-<div class="portfolio-modal modal fade" id="phoneModal" tabindex="-1" role="dialog" style="background:gray" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="alertModal" tabindex="-1" role="dialog" style="background:gray" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -56,13 +53,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <h3>What's Your Phone Number?</h3>
-                        <hr class="colored">
-                        <p>we'll send you a text message reminder the day before the event.</p>
-                        <%= form_tag "/opening_reminder", remote: true do %>
-                        	<%= telephone_field_tag "phone_number", id: "phone_number" %>
-                        	<%= submit_tag "Remind Me!", class: "btn btn-outline-light"%>
-                        <% end %>
+                        <h3>The grand opening was a great success!</h3>
+                        <h3 style="margin-top:-5px">Thank you to everyone who came out</h3>
+                        <%= image_tag "http://reactiongifs.me/wp-content/uploads/2013/09/anchorman-yes-jumping.gif" %>
+                        <p><%= link_to "See What's New at the Gym", root_path, class: "btn btn-outline-light" %></p>
                     </div>
                 </div>
             </div>
