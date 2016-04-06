@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   get 'errors/file_not_found'
-
   get 'errors/unprocessable'
-
   get 'errors/internal_server_error'
+
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
 
   namespace :admin do 
     resources :coaches do 

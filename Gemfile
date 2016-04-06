@@ -32,6 +32,10 @@ gem 'faraday'
 gem 'sidekiq'
 gem 'twilio-ruby' 
 gem 'kaminari'
+gem 'sinatra', :require => nil
+gem 'rollbar', '~> 2.8.3'
+gem 'oj', '~> 2.12.14'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
