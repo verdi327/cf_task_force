@@ -30,9 +30,11 @@
 //= require plugins/jqBootstrapValidation
 //= require plugins/instafeed.min
 //= require plugins/masked_input
+//= require plugins/bootstrap-multiselect
 //= require vitality
 //= require home
 //= require wod
 //= require signup
 //= require social-share-button
 //= require grand_opening
+//= require admin/messages

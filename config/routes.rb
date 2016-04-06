@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       resources :images, :only => [:create, :destroy]
     end
     resources :wods
+    resources :messages, only: [:index, :create, :new, :show]
   end
   
   mount Buttercms::Engine => '/blog'
@@ -31,6 +32,7 @@ Rails.application.routes.draw do
   match '/404', to: 'errors#file_not_found', via: :all
   match '/422', to: 'errors#unprocessable', via: :all
   match '/500', to: 'errors#internal_server_error', via: :all
+  get '/fdhq-callback' => 'admin/messages#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
