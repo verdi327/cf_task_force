@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require ga_tracking.min
+//= require rollbar
 //= require plugins/retina/retina.min 
 //= require jquery
 //= require jquery_ujs
