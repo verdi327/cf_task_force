@@ -29,7 +29,7 @@ gem "simple_calendar", "~> 2.0"
 gem 'social-share-button'
 gem 'sitemap_generator'
 gem 'faraday'
-gem 'sidekiq'
+gem 'sucker_punch'
 gem 'twilio-ruby' 
 gem 'kaminari'
 gem 'sinatra', :require => nil
