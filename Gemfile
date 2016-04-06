@@ -29,7 +29,9 @@ gem "simple_calendar", "~> 2.0"
 gem 'social-share-button'
 gem 'sitemap_generator'
 gem 'faraday'
-
+gem 'sidekiq'
+gem 'twilio-ruby' 
+gem 'kaminari'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -3,7 +3,7 @@
 <%#= link_to "Auth With FrontDesk", "https://frontdeskhq.com/oauth/authorize?client_id=H976y2NokSuqQbjup6UaBJS0YvLQcbtfSTePrBQt&response_type=code&redirect_uri=http://localhost:3000/fdhq-callback
 ", class: "btn btn-outline-dark" %>
 
-<%= link_to "Create New Text Message", new_admin_message_path, class: "btn btn-outline-dark" %>
+<%= link_to "Create New Text Message", new_admin_message_path, class: "btn btn-outline-dark", style: "margin:15px 0;" %>
 
 <table class="table">
   <thead>
@@ -29,4 +29,7 @@
     <% end %>
   </tbody>
 </table>
+
+<%= paginate @messages %>
+
 
