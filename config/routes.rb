@@ -20,7 +20,6 @@ Rails.application.routes.draw do
   get '/wod'           => 'pages#wod'
   get '/schedule'      => 'pages#schedule'
   get '/contact-us'    => 'pages#contact_us'
-  post '/contact_form' => 'contact_form#create'
   get '/admin'         => 'admin/base#index'
   get '/wod_loader'    => 'wod_loader#fetch'
   get '/signup'        => 'pages#signup'
