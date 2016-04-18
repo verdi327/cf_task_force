@@ -28,7 +28,6 @@
 //= require plugins/jquery.mixitup
 //= require plugins/wow/wow.min
 //= require plugins/zendesk-contact-form
-//= require contact_me
 //= require plugins/jqBootstrapValidation
 //= require plugins/instafeed.min
 //= require plugins/masked_input
