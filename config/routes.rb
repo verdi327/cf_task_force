@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   get '/contact-us'    => 'pages#contact_us'
   get '/admin'         => 'admin/base#index'
   get '/wod_loader'    => 'wod_loader#fetch'
-  get '/signup'        => 'pages#signup'
+  get '/get-started'   => 'pages#get_started'
   get '/sitemap'       => 'pages#sitemap'
   get '/grand-opening' => 'pages#grand_opening'
   post '/opening_reminder' => 'opening_reminder#create'

@@ -36,7 +36,7 @@
 //= require vitality
 //= require home
 //= require wod
-//= require signup
+//= require get_started
 //= require social-share-button
 //= require grand_opening
 //= require admin/messages

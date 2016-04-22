@@ -12,7 +12,7 @@ class PagesController < ApplicationController
 	
 	def schedule;end
 	def contact_us;end
-	def signup;end
+	def get_started;end
 	def grand_opening;end
 	def sitemap;end
 end

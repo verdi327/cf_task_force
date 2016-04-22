@@ -13,11 +13,14 @@
 
 <section class="cta-form bg-dark">
     <div class="container text-center">
-        <h3>New Member?</h3>
+        <h3>Interested in Learning More?</h3>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-            		<p>Signup takes less than 2 minutes and allows you register for classes and a whole lot more.</p>
-                    <%= link_to "Signup Now!", signup_path, class: "btn btn-primary"%>
+        		<p>Schedule a free 30 minute athlete assessment.  During that time you'll meet 1 on 1 with a coach to discuss your fitness goals and answer any questions you may have.</p>
+                <%= render partial: "shared/assessment_icons" %>
+                <div style="margin-top:25px">
+                    <%= link_to "Takes 15 Seconds to Schedule", get_started_path, class: "btn btn-primary btn-lg", style:"width:50%"%>
+                </div>
             </div>
         </div>
     </div>
@@ -28,17 +31,13 @@
         <div class="row text-center">
             <div class="col-lg-12">
                 <h2>Pick Your Class</h2>
-                <p>Where are the classes!? Our grand opening is April 2nd.  Regular class programming begins April 4th.</p>
+                <p>all roads lead to a better you</p>
                 <hr class="colored">
             </div>
         </div>
         <div class="row content-row">
         	<div class="col-lg-12" style="text-align:center">
-        		<link href='https://fdhq-assets.s3.amazonaws.com/widget/class_schedule/widget.css' rel='stylesheet'>
-                <span>
-                <script defer='defer' src='https://fdhq-assets.s3.amazonaws.com/widget/class_schedule/app.min.js'></script>
-                </span>
-                <div data-fd-domain='cigarcitycrossfit' data-fd-timezone='America/New_York' data-location='20039' data-ng-cloak='' data-ui-view='' id='fd_schedule' ng-controller='ContextController'></div>
+                <iframe src="https://app.wodify.com/Schedule/PublicCalendarListView.aspx?tenant=4151" width="800" height="800"></iframe>
         	</div>
         </div>
     </div>

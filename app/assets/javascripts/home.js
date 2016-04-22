@@ -1,5 +1,23 @@
 $(".pages.home").ready(function() {
-	
+  //show thank you modal after wodify form submit
+  var urlParams;
+  (window.onpopstate = function () {
+      var match,
+          pl     = /\+/g,  // Regex for replacing addition symbol with a space
+          search = /([^&=]+)=?([^&]*)/g,
+          decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+          query  = window.location.search.substring(1);
+
+      urlParams = {};
+      while (match = search.exec(query))
+         urlParams[decode(match[1])] = decode(match[2]);
+  })();
+
+  if(urlParams["gainz"]){
+    $("#thank-you-modal").modal("show");  
+  }
+  
+
 	// Owl Carousel Settings
 	$(".about-carousel").owlCarousel({
 	    items: 3,
