@@ -3,29 +3,11 @@
     <meta name="description" content="View Cigar City Crossfit's WODS (workout of the day). Our workouts are never random. We program weeks in advance. We use TrainHeroic to allow our athletes the best performance tracking available.">
 <% end %>
 
-<% content_for :head_bottom do %>
-    <meta name="twitter:card"            content="summary_large_image">
-    <meta name="twitter:site"            content="@CigarCityCF">
-    <meta name="twitter:title"           content="Today's WOD">
-    <meta name="twitter:description"     content="Work hard, get results and make friends while you're doing it - that's what we're about at Cigar City CrossFit">
-    <meta name="twitter:image"           content="<%=@todays_wod.image.url%>">
-    <meta property="fb:app_id"           content="940381442715003">
-    <meta name="og:site"                 content="<%=request.domain%>">
-    <meta name="og:site_name"            content="Cigar City CrossFit">
-    <meta property="og:image"            content="<%=@todays_wod.image.url%>">
-    <meta property="og:image:type"       content="image/jpg">
-    <meta property="og:image:width"      content="425">
-    <meta property="og:image:height"     content="425">
-    <meta property="og:url"              content="<%= request.url %>">
-    <meta property="og:title"            content="Today's WOD">
-    <meta property="og:description"      content="Work hard, get results and make friends while you're doing it - that's what we're about at Cigar City CrossFit">
-<% end %>
-
 <header style="background-image: url('https://cftaskforce.files.wordpress.com/2016/01/zfiqc5czrp.jpg');">
     <div class="intro-content">
-        <div class="brand-name-intro">WOD Blog<div>
+        <div class="brand-name">WOD Journal</div>
         <hr class="colored">
-        <div class="brand-name">Time to sweat</div>
+        <div class="brand-name-intro">time to sweat<div>
     </div>
 </header>
 
@@ -40,28 +22,10 @@
         </div>
         
         <div class="row text-center" id="todays-wod">
-            <div class="col-lg-8 col-lg-offset-2">
-                <div class="social-share-button" data-title="Today's WOD @ Cigar City CrossFit" data-url="<%=request.url%>" data-desc="" data-popup="true" data-via="">
-                    <a rel="nofollow " data-site="twitter" class="social-share-button-twitter" onclick="return SocialShareButton.share(this);" title="Share to Twitter" href="#"><%= fa_icon "twitter", class: "fa-2x" %></a>
-                    <a rel="nofollow " data-site="facebook" class="social-share-button-facebook" onclick="return SocialShareButton.share(this);" title="Share to Facebook" href="#"><%= fa_icon "facebook", class: "fa-2x" %></a>
-                </div>
-
-                <%= image_tag(@todays_wod.image.url, class: "img img-responsive center", alt: "WOD - Workout of the Day for Cigar City CrossFit") %>
-            </div>
-        </div>
-        <div class="row content-row text-center" id="previous-wods" style="display:none">
-            <h3>Previous WODs</h3>
-            <div class="col-md-12">
-                <!-- previous wods load here -->
-            </div>
-        </div>
-        <div class="row content-row text-center">
             <div class="col-lg-12">
-                <%= link_to wod_loader_path(end_date: "1"), class: "btn btn-lg btn-outline-dark", remote: true, id: "btn-loader" do %>
-                    See More Wods
-                <% end %>
-                <p id="reset-link" style="display:none"><%= link_to "reset", "/wod" %></p>
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe src="https://app.wodify.com/Performance/PublicWhiteboard.aspx?WhiteboardKey=vyky7cu44j"></iframe>
+                </div>
             </div>
-        </div>  
-    </div>
+        </div>
 </section>
