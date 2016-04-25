@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   get '/schedule'      => 'pages#schedule'
   get '/contact-us'    => 'pages#contact_us'
   get '/admin'         => 'admin/base#index'
-  get '/wod_loader'    => 'wod_loader#fetch'
+  # get '/wod_loader'    => 'wod_loader#fetch'
   get '/get-started'   => 'pages#get_started'
   get '/sitemap'       => 'pages#sitemap'
   get '/grand-opening' => 'pages#grand_opening'
