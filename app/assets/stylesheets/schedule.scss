@@ -1,0 +1,52 @@
+.icons{
+	margin-top:25px;
+}
+
+button.selected{
+	background:#ef4035;
+}
+
+.schedule-btn{
+	width:50%;
+}
+
+@media (max-width: 768px) {
+  .schedule-btn {
+    width:100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-btn {
+    width:100%;
+  }
+}
+
+@media (min-width: 501px) {
+	.small-screen-schedule{display:none !important;}
+	.full-screen-schedule{display:block;}
+}
+
+
+@media (max-width: 500px) {
+  .small-screen-schedule{display:block !important;}
+  table td.no-border{border-top:none !important;}
+	.full-screen-schedule{display:none !important;}
+}
+
+table.schedule{
+	thead{
+		th{text-align:center}
+	}
+	tbody{
+		td.selected{background:#ef4035}
+	}
+}
+
+@media (max-width: 768px) {
+  .btn-responsive {
+    display:block;
+    width:100%;
+    margin-top:5px;
+  }
+}

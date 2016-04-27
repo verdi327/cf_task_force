@@ -36,6 +36,7 @@
 //= require vitality
 //= require home
 //= require wod
+//= require schedule
 //= require get_started
 //= require social-share-button
 //= require grand_opening

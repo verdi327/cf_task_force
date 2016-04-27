@@ -26,6 +26,7 @@
  *= require pages
  *= require grand-opening
  *= require checkboxes
+ *= require schedule
  */
 
 a.banner{
@@ -42,4 +43,11 @@ a.banner{
   a.banner{
   	margin-top:0px !important;
   }
+}
+
+@media (max-width: 481px) {
+ .brand-name{
+ 		font-size:50px !important;
+ 		line-height:50px !important;
+ }
 }
