@@ -27,9 +27,11 @@ button.selected{
 	.full-screen-schedule{display:block;}
 }
 
-
 @media (max-width: 500px) {
+	.cta-form h3{font-size:30px}
+	.icons{display:none}
   .small-screen-schedule{display:block !important;}
+  .panel-heading{padding:20px !important}
   table td.no-border{border-top:none !important;}
 	.full-screen-schedule{display:none !important;}
 }
