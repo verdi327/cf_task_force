@@ -12,37 +12,53 @@
 </header>
 
 <section>
-	<div class="container-fluid">
-	    <div class="row text-center">
-	        <div class="col-lg-8 col-lg-offset-2">
-	            <h2>book your free trial</h2>
-	            <hr class="colored">
-	            <div class="icons" style="padding:35px 0">
-	            	<div class="row">
-	            	    <div class="col-md-3">
-	            	        <%=fa_icon "trophy", class: "fa-2x"%>
-	            	        <h4>Discuss your goals</h4>
-	            	    </div>
-	            	    <div class="col-md-3">
-	            	        <%=fa_icon "building", class: "fa-2x"%>
-	            	        <h4>Tour the facility</h4>
-	            	    </div>
-	            	    <div class="col-md-3">
-	            	        <%=fa_icon "users", class: "fa-2x"%>
-	            	        <h4>Meet our coaches</h4>
-	            	    </div>
-	            	    <div class="col-md-3">
-	            	        <%=fa_icon "heartbeat", class: "fa-2x"%>
-	            	        <h4>Break a sweat</h4>
-	            	    </div>
-	            	</div>
-	            </div>
+	<div class="container">
+	    <div class="row">
+	        <div class="col-lg-12">
+	        	<h2 style="text-align:center">Let's Get You Started</h2>
+	          <hr class="colored">
+            <p>It doesn't matter if you’re new to CrossFit, just getting back into it, or are actively training at another box. We have a place for you here.</p>
+            <p>Our community is made up of positive, empowered, and motivated individuals from all walks of life. If you’re looking to have fun, make friends, and get results, then your search is over.  Welcome to Cigar City CrossFit.</p>
 	        </div>
 	    </div>
-	    <div class="row content-row">
-	    	<div class="col-lg-6 col-lg-offset-3">
+
+	    <div class="row" style="margin-top:25px">
+	    	<div class="col-md-7">
+	    		<div class="embed-responsive embed-responsive-16by9">
+	    			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mlVrkiCoKkg"></iframe>
+	    		</div>
+	    		<div class="topics-wrapper">
+	    			<h3>What to Expect</h3>
+	    			<p>During your FREE trial, we'll discuss the following:</p>
+	    			<div class="topics">
+		    			<p>
+		    				<%=fa_icon "check-circle-o"%>
+		    				Get to know you, your personal goals, and what drives you
+		    			</p>
+		    			<p>
+		    				<%=fa_icon "check-circle-o"%>
+		    				We’ll see if we can match your goals with a program that’s right for you
+		    			</p>
+		    			<p>
+		    				<%=fa_icon "check-circle-o"%>
+		    				We’ll provide an overview of our training program, coaches, and schedule
+		    			</p>
+		    			<p>
+		    				<%=fa_icon "check-circle-o"%>
+		    				We’ll give you a tour of our facility, one of the largest CrossFit gyms in the southeast
+		    			</p>
+		    			<p>
+		    				<%=fa_icon "check-circle-o"%>
+		    				We’ll figure out if Cigar City CrossFit is right for you
+		    			</p>
+	    			</div>
+
+	    		</div>
+	    	</div>
+	    	<div class="wodify-form col-md-5">
 	    		<%= render partial: "shared/wodify_lead_form" %>
 	    	</div>
 	    </div>
+
 	 </div>
 </section>

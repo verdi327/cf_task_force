@@ -1,0 +1,25 @@
+.topics-wrapper{
+	margin-top:15px;
+	.topics{
+		margin-left:10px;
+		p {font-size:17px;}
+	}
+}
+
+.wodify-form{
+	padding-left:100px;
+}
+
+@media (max-width: 500px) {
+	.wodify-form{
+		margin-top:25px;
+		padding-left:0px;
+		margin-left:10px;
+		margin-right:10px;
+		.btn{
+			padding:20px 18px;
+			margin-left:7px;
+		}
+	}
+}
+

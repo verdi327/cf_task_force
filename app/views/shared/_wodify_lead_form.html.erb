@@ -38,12 +38,7 @@ else
             <p class="help-block text-danger"></p>
         </div>
     </div>
-    <div class="row control-group">
-        <div class="form-group col-xs-12">
-        		<p style="margin-top:30px;"><input type="checkbox" id="subscribe" name="subscribe" value="True" checked/><label for="subscribe" style="font-weight:300"><span class="ui"></span>May We Text You?</label></p>
-        </div>
-    </div>
-    <div class="row control-group">
+    <div class="row control-group" style="margin-top:20px">
         <div class="form-group col-xs-12">
             <p>How Did You Hear About Us</p>
             <select name="leadsource" id="leadsource">
@@ -68,10 +63,9 @@ else
     <br />
     <input type="hidden" name="redirecturl" value="<%=wodify_redirect_url%>">
     <input type="hidden" name="apikey" value="bky4hg7wxe">
+    <input type="hidden" name="subscribe" value="True">
 
     <div class="row">
-        <div class="form-group col-xs-12">
-            <button type="submit" class="btn btn-outline-dark btn-block">Send</button>
-        </div>
+        <button type="submit" class="btn btn-outline-dark btn-block">Send</button>
     </div>
 </form>
