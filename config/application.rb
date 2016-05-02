@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module CfTaskForce
   class Application < Rails::Application
+    config.autoload_paths << Rails.root.join('lib')
     config.exceptions_app = self.routes
     config.assets.paths << Rails.root.join("assets", "fonts")
     # Settings in config/environments/* take precedence over those specified here.
