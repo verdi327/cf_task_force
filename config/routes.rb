@@ -10,6 +10,14 @@ Rails.application.routes.draw do
     resources :wods
     resources :messages, only: [:index, :create, :new, :show]
   end
+
+  namespace :tools do 
+    resources :wendlers, only: [:index, :create] do 
+      collection do 
+        get "results"
+      end
+    end
+  end
   
   mount Buttercms::Engine => '/blog'
   # The priority is based upon order of creation: first created -> highest priority.
@@ -30,6 +38,7 @@ Rails.application.routes.draw do
   match '/422', to: 'errors#unprocessable', via: :all
   match '/500', to: 'errors#internal_server_error', via: :all
   get '/fdhq-callback' => 'admin/messages#index'
+  get '/tools' => 'tools/base#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,0 +1,24 @@
+<h1>Wendler Strength Calculator</h1>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+<%= form_tag(tools_wendlers_path) do %>
+	<div>
+		<%= label_tag "Weight" %>
+		<%= number_field_tag "Weight" %>
+	</div>
+	<div>
+		<%= label_tag "Bar Weight" %>
+		<%= number_field_tag "Bar Weight" %>
+	</div>
+	<%= hidden_field_tag "week", "1" %>
+<% end %>
+
+
+<p><%= link_to "Week One", "#1", data: {"week": "1"}, class: "btn btn-block btn-outline" %></p>
+<p><%= link_to "Week Two", "#2", data: {"week": "2"}, class: "btn btn-block btn-outline" %></p>
+<p><%= link_to "Week Three", "#3", data: {"week": "3"}, class: "btn btn-block btn-outline" %></p>
+<p><%= link_to "Week Four", "#4", data: {"week": "4"}, class: "btn btn-block btn-outline" %></p>
