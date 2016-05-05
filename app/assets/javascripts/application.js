@@ -41,3 +41,4 @@
 //= require social-share-button
 //= require grand_opening
 //= require admin/messages
+//= require tools/wendler

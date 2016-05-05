@@ -2,19 +2,27 @@ class WendlerCalc
 	attr_reader :weight, :week
 
 	def initialize(weight,week)
-		@weight = find_90(weight)
+		@weight = find_90(weight.to_i)
 		@week = week
 	end
 
 	def run
 		data[week].inject([]) do |result, obj|
-			value = [obj[0], (weight * obj[1]).round]
+			value = [obj[0], round_up(obj)]
 			result << value
 			result
 		end
 	end
 
 	private
+
+	def round_up(data)
+		new_weight = (weight * data[1]).round
+		until new_weight % 2.5 == 0
+			new_weight += 1
+		end
+		new_weight
+	end
 
 	def data
 		{

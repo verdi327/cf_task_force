@@ -1,1 +1,41 @@
-<h1>Result Page</h1>
+<script type="text/javascript">
+	$("nav").addClass("solid");
+	setTimeout(function(){
+		$("#footer-signup").hide();
+		$("footer").hide();
+	}, 0);
+</script>
+
+<section>
+	<div class="container">
+		<%= link_to(tools_wendlers_path, class: "btn btn-primary back") do %>
+			<%=fa_icon "angle-double-left"%>
+			Back
+		<% end %>
+
+		<h1>Week <%=@week%> Lifts</h1>
+
+		<div class="results">
+			<% @results.each do |result| %>
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">
+				    	<%="#{result[0]} @ #{result[1]} lbs"%>
+				    </h3>
+				  </div>
+				  <div class="panel-body">
+				    <% result[2].each do |plate, num| %>
+				    	<span class="plate"><%=plate%></span>
+				    	<span class="number"><%="(#{num})"%></span>
+				    <% end %>
+				  </div>
+				</div>
+			<% end %>
+		</div>
+
+		<%= link_to(tools_wendlers_path, class: "btn btn-primary") do %>
+			<%=fa_icon "angle-double-left"%>
+			Back
+		<% end %>
+	</div>	
+</section>
