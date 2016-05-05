@@ -1,0 +1,38 @@
+.results{
+	.panel-title{
+		font-size: 20px;
+		font-family: Helvetica Neue;
+    text-transform: lowercase;
+	}
+
+	span.plate{
+		font-size:25px;
+		font-weight:bold;
+	}
+
+	span.number{
+		margin-right:10px;
+	}	
+}
+
+#wendler-form{
+	label{
+		display:block;
+	}
+	input{
+		padding:10px 3px;
+	}
+}
+
+.weeks{
+	.btn{
+		padding:20px 18px;
+	}
+}
+
+.container .back{margin-top:20px}
+h1.title{text-align:center}
+@media (max-width: 500px) {
+	.container .back{margin-top:0px}
+	h1.title{font-size:30px;}
+}

@@ -1,0 +1,16 @@
+nav.solid{
+	background:#222222 !important
+}
+
+.tools{
+	.item{
+		border:10px solid #ef4035;
+		text-align:center;
+		margin:0 20px;
+		&:hover{
+			background:lighten(#ef4035, 20% );
+		}
+		h2{margin-top:-2px;}
+		img{padding-top:20px;}
+	}
+}
