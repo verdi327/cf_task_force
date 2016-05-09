@@ -1,1 +1,1 @@
-Insightly2.api_key = "127b02f1-4b0b-4cdf-a8f6-cdeee2dbc549"
+Insightly2.api_key = ENV["INSIGHTLY_API_KEY"]
