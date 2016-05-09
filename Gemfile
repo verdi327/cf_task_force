@@ -35,6 +35,7 @@ gem 'kaminari'
 gem 'sinatra', :require => nil
 gem 'rollbar', '~> 2.8.3'
 gem 'oj', '~> 2.12.14'
+gem 'insightly2'
 
 
 # Use ActiveModel has_secure_password

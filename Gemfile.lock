@@ -94,6 +94,9 @@ GEM
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     i18n (0.7.0)
+    insightly2 (0.1.9)
+      activesupport
+      faraday
     ipaddress (0.8.2)
     jbuilder (2.4.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -242,6 +245,7 @@ DEPENDENCIES
   faraday
   fog-aws
   font-awesome-rails
+  insightly2
   jbuilder (~> 2.0)
   jquery-rails
   kaminari

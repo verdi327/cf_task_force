@@ -18,6 +18,8 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  resources :leads, only: [:create]
   
   mount Buttercms::Engine => '/blog'
   # The priority is based upon order of creation: first created -> highest priority.

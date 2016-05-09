@@ -1,17 +1,15 @@
 .topics-wrapper{
-	margin-top:15px;
+	padding-left:30px;
+	h3{margin-top:0px;}
 	.topics{
 		margin-left:10px;
 		p {font-size:17px;}
 	}
 }
 
-.wodify-form{
-	padding-left:100px;
-}
 
 @media (max-width: 500px) {
-	.wodify-form{
+	.topics-wrapper{
 		margin-top:25px;
 		padding-left:0px;
 		margin-left:10px;

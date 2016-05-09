@@ -1,0 +1,44 @@
+<%= form_tag leads_path do %>
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label for="First Name">First Name</label>
+            <input type="text" name="first_name" class="form-control" maxlength="25" placeholder="First Name" id="first_name" required data-required> 
+        </div>
+    </div>
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label for="Last Name">Last Name</label>
+            <input type="text" name="last_name" class="form-control" maxlength="25" placeholder="Last Name" id="last_name" required data-required> 
+        </div>
+    </div>
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" maxlength="250" placeholder="Email Address" id="email" required data-required>      
+        </div>
+    </div>
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" class="form-control" maxlength="20" placeholder="Phone Number" id="phone" required>
+        </div>
+    </div>
+    <div class="row control-group" style="margin-top:20px">
+        <div class="form-group col-xs-12">
+            <p>How Did You Hear About Us</p>
+            <select name="leadsource" id="leadsource">
+                <option value="">--select--</option>
+                <option value="Friend/Family">Friend/Family</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Google/Search Engine">Google/Search Engine</option>
+                <option value="Yelp">Yelp</option>
+                <option value="Print Sign or Sticker">Print Sign or Sticker</option>
+                <option value="SMS">SMS</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+    </div>
+    <div class="row control-group" style="margin-top:20px">
+        <%= submit_tag "Book Free Trial", class: "btn btn-primary btn-block" %>
+    </div>
+<% end %>

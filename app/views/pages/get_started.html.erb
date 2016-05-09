@@ -5,9 +5,8 @@
 
 <header style="background-image: url('https://cftaskforce.files.wordpress.com/2016/01/rope-climb.jpg');">
     <div class="intro-content">
-       	<div class="brand-name">your best self</div>
-        <hr class="colored">
-        <div class="brand-name-intro">begins now<div>
+       	<h2>Book Your Free Trial</h2>
+       	<%= render partial: "shared/lead_form" %>
     </div>
 </header>
 
@@ -15,7 +14,7 @@
 	<div class="container">
 	    <div class="row">
 	        <div class="col-lg-12">
-	        	<h2 style="text-align:center">Book Your Free Trial</h2>
+	        	<h2 style="text-align:center">What We're About</h2>
 	          <hr class="colored">
             <p>It doesn't matter if you’re new to CrossFit, just getting back into it, or are actively training at another box. We have a place for you here.</p>
             <p>Our community is made up of positive, empowered, and motivated individuals from all walks of life. If you’re looking to have fun, make friends and get results, then your search is over.</p>
@@ -27,38 +26,33 @@
 	    		<div class="embed-responsive embed-responsive-16by9">
 	    			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mlVrkiCoKkg"></iframe>
 	    		</div>
-	    		<div class="topics-wrapper">
-	    			<h3>What to Expect</h3>
-	    			<p>During your FREE trial, we'll discuss the following:</p>
-	    			<div class="topics">
-		    			<p>
-		    				<%=fa_icon "check-circle-o"%>
-		    				Get to know you, your personal goals, and what drives you
-		    			</p>
-		    			<p>
-		    				<%=fa_icon "check-circle-o"%>
-		    				We’ll see if we can match your goals with a program that’s right for you
-		    			</p>
-		    			<p>
-		    				<%=fa_icon "check-circle-o"%>
-		    				We’ll provide an overview of our training program, coaches, and schedule
-		    			</p>
-		    			<p>
-		    				<%=fa_icon "check-circle-o"%>
-		    				We’ll give you a tour of our facility, one of the largest CrossFit gyms in the southeast
-		    			</p>
-		    			<p>
-		    				<%=fa_icon "check-circle-o"%>
-		    				We’ll figure out if Cigar City CrossFit is right for you
-		    			</p>
-	    			</div>
-
-	    		</div>
 	    	</div>
-	    	<div class="wodify-form col-md-5">
-	    		<%= render partial: "shared/wodify_lead_form" %>
+	    	<div class="topics-wrapper col-md-5">
+	  			<h3>Not Just a Workout</h3>
+	  			<p>During your FREE trial, we'll discuss the following:</p>
+	  			<div class="topics">
+	    			<p>
+	    				<%=fa_icon "check-circle-o"%>
+	    				Get to know you, your personal goals, and what drives you
+	    			</p>
+	    			<p>
+	    				<%=fa_icon "check-circle-o"%>
+	    				We’ll see if we can match your goals with a program that’s right for you
+	    			</p>
+	    			<p>
+	    				<%=fa_icon "check-circle-o"%>
+	    				We’ll provide an overview of our training program, coaches, and schedule
+	    			</p>
+	    			<p>
+	    				<%=fa_icon "check-circle-o"%>
+	    				We’ll give you a tour of our facility, one of the largest CrossFit gyms in the southeast
+	    			</p>
+	    			<p>
+	    				<%=fa_icon "check-circle-o"%>
+	    				We’ll figure out if Cigar City CrossFit is right for you
+	    			</p>
+	  			</div>
 	    	</div>
 	    </div>
-
 	 </div>
 </section>
