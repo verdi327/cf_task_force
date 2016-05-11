@@ -10,8 +10,9 @@
         <div class="intro-text">
             <hr class="colored">
             <div class="brand-name-subtext">Get Results | Make Friends | Have Fun</div>
-            <div class="scroll-down">
-                <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
+            <div class="action-btns">
+                <%= link_to "Learn More", "#about", class: "btn btn-default page-scroll" %>
+                <%= link_to "Book FREE Trial", get_started_path, class: "btn btn-primary" %>
             </div>
         </div>
     </div>

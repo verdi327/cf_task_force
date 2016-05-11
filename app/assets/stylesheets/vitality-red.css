@@ -285,7 +285,13 @@ header .intro-content {
   color: white;
   text-align: center;
   position: relative;
+  width:100%;
 }
+
+header .intro-content .action-btns{
+  margin-top:30px;
+}
+
 header .brand-name-intro {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 40px;
@@ -307,8 +313,8 @@ header .brand-name-subtext {
   font-weight: 300;
 }
 header img {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 350px;
+  max-height: 350px;
 }
 header .intro-text{
   text-transform: uppercase;
@@ -367,8 +373,8 @@ header .scroll-down .btn:hover {
     line-height: 30px;
   }
   header img {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 350px;
+    max-height: 350px;
   }
 }
 @media (min-width: 1025px) {
