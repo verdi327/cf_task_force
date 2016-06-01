@@ -71,11 +71,10 @@ $(".pages.home").ready(function() {
 	});
 
   // instafeed request
-  var instagramClientId = $("#insta-id").data("id")
   var feed = new Instafeed({
       get: 'user',
       userId: '2263654386',
-      clientId: instagramClientId,
+      accessToken: '2263654386.7342225.10cc708737d64944b7849ed9fb6dcac3',
       resolution: 'low_resolution',
       limit: 21,
       template: '<div class="portfolio identity">' +
