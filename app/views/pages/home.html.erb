@@ -359,6 +359,48 @@
     </div>
 </section>
 
+<section id="drop-ins">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2>We Love Drop Ins</h2>
+                <hr class="colored">
+            </div>
+        </div>
+        <div class="row content-row text-center">
+            <div class="col-md-8 col-md-offset-2">
+                <p>
+                    Whether you're traveling for work, on vacation, or live locally and just want to try out the gym, we'd love for you to drop in and sweat with us!
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="about-content">
+                    <h3>One</h3>
+                    <p>Check out our <%= link_to "schedule", schedule_path %> to find a class that works for you.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="about-content">
+                    <h3>Two</h3>
+                    <p>Arrive 15 minutes early to sign a waiver and say hello to the coaches!</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="about-content">
+                    <h3>Three</h3>
+                    <p>Smile. Work Hard. Make a Sweat Angel.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="about-content">
+                    <h3>Four</h3>
+                    <p>Pay ($15, card or cash), think about buying one of our rad shirts and promise to come back again soon!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- profile modals -->
 <% @coaches.each do |coach| %>
     <%= render partial: "profile_modal", locals: {coach: coach} %>
