@@ -2,7 +2,7 @@ require 'test_helper'
 
 class WeightCalcTest < ActiveSupport::TestCase
   describe WeightCalc do
-    describe "when a male bar is used" do
+    describe "when a 45lb bar is used" do
       it "must calc 40 correctly" do
         @wc = WeightCalc.new(40,45)
         result = @wc.calc
@@ -53,7 +53,7 @@ class WeightCalcTest < ActiveSupport::TestCase
       end
     end
 
-    describe "when a women bar is used" do 
+    describe "when a 35lb bar is used" do 
       it "must calc 40 correctly" do
         @wc = WeightCalc.new(30,35)
         result = @wc.calc

@@ -4,7 +4,7 @@ class WeightCalc
 	def initialize(weight, bar_weight)
 		@weight = round_up(weight.to_i)
 		@bar_weight = bar_weight.to_i
-		@plates = [90.0, 50.0, 30.0, 20.0, 10.0, 5.0]
+		@plates = [90.0, 50.0, 30.0, 20.0, 10.0, 5.0] # doubled the plates here for ease of divison
 		@result = {}
 	end
 
