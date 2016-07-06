@@ -15,4 +15,5 @@ class PagesController < ApplicationController
 	def get_started;end
 	def grand_opening;end
 	def sitemap;end
+	def shit_we_like;end
 end
