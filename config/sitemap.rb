@@ -30,5 +30,7 @@ SitemapGenerator::Sitemap.create do
   add '/contact-us', :changefreq => 'monthly'
   add '/admin', :changefreq => 'yearly'    
   add '/get-started', :changefreq => 'monthly'
+  add '/blog', :changefreq => 'weekly'
+  add '/shit-we-like', :changefreq => 'monthly'
   add '/sitemap', :changefreq => 'monthly'
 end
