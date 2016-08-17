@@ -30,3 +30,13 @@
         float: left;
     }
 }
+
+.dropdown-menu{
+    li a{color:black !important};
+}
+
+@media (max-width: 765px) {
+    .dropdown-menu{
+        li a{color:white !important};
+    }    
+}
