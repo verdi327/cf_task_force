@@ -16,4 +16,5 @@ class PagesController < ApplicationController
 	def grand_opening;end
 	def sitemap;end
 	def shit_we_like;end
+	def refer_a_friend;end
 end

@@ -1,0 +1,63 @@
+<% content_for :head_top do %>
+    <title>Refer a Friend</title>
+    <meta name="description" content="Refer a friend to Cigar City CrossFit. Earn a free month of CrossFit.">
+<% end %>
+
+<header style="background-image: url('https://cftaskforce.files.wordpress.com/2016/01/wall-sit-1.jpg');">
+    <div class="intro-content">
+        <div class="brand-name">Refer a Friend</div>
+        <hr class="colored">
+        <div class="brand-name-intro">spread the love<div>
+    </div>
+</header>
+
+<section>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2>Let's Grow the Family</h2>
+                <hr class="colored">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div>
+                    <h4>First - A Thank You  <%= fa_icon "smile-o"%></h4>
+                    <p>
+                        Thank you for trusting in us to recommend our gym to another friend or family member.  It means the world to us.  If we want to have continued success, it will be because of positive personal referrals from happy members like you.
+                    </p>
+                </div>
+                <div style="margin-top:30px">
+                    <h4>Second - A Perk  <%= fa_icon "money"%></h4>
+                    <p>
+                        Earning a <span class="text-primary"><b>FREE</b></span> month of CrossFit couldn't be easier. If your referring friend signs up for a 6 or 12 month commitment, we'll hook you up with a <span class="text-primary"><b>FREE</b></span> month.  Or, if your friend signs up for any other commitment length we'll add store credit to your account to use on anything you like.
+                    </p>
+                    <table style="margin-top:20px" class="table">
+                      <thead>
+                        <tr>
+                          <th>Month-to-Month or Punch Card</th>
+                          <th>3 Month Commitment</th>
+                          <th>6 or 12 Month Commitment</th>
+                          <th></th>
+                          <th colspan="3"></th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                          <tr>
+                            <td>$25 Store Credit</td>
+                            <td>$50 Store Credit</td>
+                            <td>Free Month of CrossFit</td>
+                          </tr>
+                      </tbody>
+                    </table>
+                </div>
+                <div style="margin-top:30px">
+                    <h4>Third - Complete This Form  <%= fa_icon "pencil-square-o"%></h4>
+                    <%= render "pages/hatchbuck_forms/refer_a_friend" %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

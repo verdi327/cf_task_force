@@ -32,15 +32,14 @@ Rails.application.routes.draw do
   get '/contact-us'    => 'pages#contact_us'
   get '/admin'         => 'admin/base#index'
   get '/shit-we-like'  => 'pages#shit_we_like'
+  get '/refer-a-friend'=> 'pages#refer_a_friend'
   # get '/wod_loader'    => 'wod_loader#fetch'
   get '/get-started'   => 'pages#get_started'
   get '/sitemap'       => 'pages#sitemap'
-  get '/grand-opening' => 'pages#grand_opening'
-  post '/opening_reminder' => 'opening_reminder#create'
+  get '/grand-opening' => 'pages#grand_opening' # retired paged
   match '/404', to: 'errors#file_not_found', via: :all
   match '/422', to: 'errors#unprocessable', via: :all
   match '/500', to: 'errors#internal_server_error', via: :all
-  get '/fdhq-callback' => 'admin/messages#index'
   get '/tools' => 'tools/base#index'
 
   # Example of regular route:
