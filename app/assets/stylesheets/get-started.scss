@@ -25,3 +25,42 @@
 	}
 }
 
+.phone_number{
+	float:left;
+	span.phone-number{
+		color: grey;
+		font-size: 25px;
+		margin-right: 20px;
+	}
+	#phone_area{
+		background:white;
+		width:85px;
+		font-size:18px;
+		text-align:center;
+		color:black;
+		height:30px;
+	}
+	#phone_number{
+		background:white;
+		width:200px;
+		font-size:18px;
+		text-align:center;
+		color:black;
+		height:30px;
+	}
+}
+
+.lead-source .dropdowns {float:left;}
+
+@media (max-width: 500px) {
+	.phone_number{text-align:left;}
+	span.phone-number{display:block;}
+	.lead-source{
+		.dropdowns{float:none;}
+	}
+}
+
+
+.multiselect.dropdown-toggle.btn.btn-default{
+	min-width:200px !important
+}

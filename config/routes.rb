@@ -35,6 +35,7 @@ Rails.application.routes.draw do
   get '/refer-a-friend'=> 'pages#refer_a_friend'
   # get '/wod_loader'    => 'wod_loader#fetch'
   get '/get-started'   => 'pages#get_started'
+  get '/thank-you'     => 'pages#thank_you'
   get '/sitemap'       => 'pages#sitemap'
   get '/grand-opening' => 'pages#grand_opening' # retired paged
   match '/404', to: 'errors#file_not_found', via: :all
