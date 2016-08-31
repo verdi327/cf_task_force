@@ -1,0 +1,129 @@
+<% content_for :head_top do %>
+    <title>Ebook Library</title>
+    <meta name="description" content="Free resources on nutrition, gaining muscle, burning fat and CrossFit basics.">
+<% end %>
+
+<header style="background-image: url('https://cftaskforce.files.wordpress.com/2016/01/ebook-bg.jpg');">
+    <div class="intro-content">
+        <div class="brand-name">Ebook Library</div>
+        <hr class="colored">
+        <div class="brand-name-intro">gain from our knowledge<div>        
+    </div>
+</header>
+
+<section>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2>Here to make you better</h2>
+                <hr class="colored">
+            </div>
+        </div>
+        <div class="row content-row">
+        	<div class="col-lg-8 col-lg-offset-2">
+                <div class="col-lg-4">
+                    <img src="https://cftaskforce.files.wordpress.com/2016/01/57c6ed98047d0.png">
+                </div>
+                <div class="col-lg-8">
+                    <h3 style="margin-top:0px">CrossFit 101</h3>
+                    <p>
+                        Heard of CrossFit, but not really sure what it's all about? You've probably seen CrossFit memes, photos and videos smattered across the internet but that doesn't really explain why people are so crazy about it. In this 10 page ebook, we dive into the what, why and how of CrossFit to give you a solid introduction into what it is all about.
+                    </p>
+                    <a href="#ebook-1-modal" data-toggle="modal" class="btn btn-outline-dark">Download Now</a>
+                </div>
+        	</div>
+        </div>
+        <div class="row content-row" style="margin-top:20px">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-lg-4">
+                    <img src="https://cftaskforce.files.wordpress.com/2016/01/57c6ee05be872.png">
+                </div>
+                <div class="col-lg-8">
+                    <h3 style="margin-top:0px">Nutrition for Athletic Success</h3>
+                    <p>
+                        Nutrition is so important to achieving any level of athletic success. It's the foundation from which all our other goals for health and fitness spring from. Yet, it's one of the most misunderstood and contentious topics in our every day lives. In this 20 page ebook, we start with the basics of nutrition - covering micro and macro nutrients and their role in our bodies. From there we dive into how exactly the food we eat turns into fuel that powers all our activities. We finish with our simple 5 Rules to Eat By which will be your roadmap for nutritional success. If your strength gains have plateaued or you're still unable to shed those unwanted pounds, this is a must read.
+                    </p>
+                    <a href="#ebook-2-modal" data-toggle="modal" class="btn btn-outline-dark">Download Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="row content-row" style="margin-top:75px">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-lg-4">
+                    <img src="https://cftaskforce.files.wordpress.com/2016/01/57c6e8119df99.png">
+                </div>
+                <div class="col-lg-8">
+                    <h3 style="margin-top:0px">How to Build Muscle and Gain Strength</h3>
+                    <p>
+                        If you're looking to increase your athletic abilities and build a better physique, adding muscle to your frame is a must. But, almost everyone struggles with adding muscle and strength at an optimal rate. We get athletes stronger every day so we know what works and what doesn't.  In this 14 page ebook, we answer 11 FAQs around what it takes to get stronger.
+                    </p>
+                    <a href="#ebook-3-modal" data-toggle="modal" class="btn btn-outline-dark">Download Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="portfolio-modal modal fade" id="ebook-1-modal" tabindex="-1" role="dialog" style="background:gray" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>CrossFit 101 Ebook is Coming!</h2>
+                        <h3>where should we send it to?</h3>
+                        <%= render partial: "pages/hatchbuck_forms/crossfit101_ebook_form" %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="ebook-2-modal" tabindex="-1" role="dialog" style="background:gray" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>Nutrition for Athletic Success Ebook is Coming!</h2>
+                        <h3>where should we send it to?</h3>
+                        <%= render partial: "pages/hatchbuck_forms/nutrition_ebook_form" %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="ebook-3-modal" tabindex="-1" role="dialog" style="background:gray" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>How to Build Muscle and Gain Strength Ebook is Coming!</h2>
+                        <h3>where should we send it to?</h3>
+                        <%= render partial: "pages/hatchbuck_forms/build_muscle_ebook_form" %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

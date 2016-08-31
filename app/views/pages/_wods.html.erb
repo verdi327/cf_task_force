@@ -1,9 +1,0 @@
-<% wods.each_slice(3) do |grouped_wods| %>
-    <div class="row wod-group">
-        <% grouped_wods.each do |wod| %>
-            <div class="col-md-4">
-                <%= image_tag(wod.image.url, class: "img img-responsive") %>
-            </div>
-        <% end %>
-    </div>
-<% end %>
