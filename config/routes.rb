@@ -36,6 +36,7 @@ Rails.application.routes.draw do
   get '/ebook-library' => 'pages#ebook_library'
   get '/get-started'   => 'pages#get_started'
   get '/thank-you'     => 'pages#thank_you'
+  get '6-week-challenge' => 'pages#challenge'
   get '/sitemap'       => 'pages#sitemap'
   match '/404', to: 'errors#file_not_found', via: :all
   match '/422', to: 'errors#unprocessable', via: :all

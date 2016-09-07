@@ -1,0 +1,47 @@
+.top-left-logo{
+	width:150px;
+	position:absolute;
+	top:10px;
+	left:25px;
+}
+
+.header-wrapper{
+	margin-top:50px;
+	.intro-content{
+		margin-top:40px;
+	}
+}
+.header{
+	color:white;
+	text-align:center;
+}
+
+section#about{
+	.info-box{
+		border:1px solid black;
+		padding:40px;
+		margin-bottom:20px;
+	}
+}
+
+.apply-btn{
+	margin-top:50px;
+	padding:20px 0;
+	width:100%;
+}
+
+section#testimonials{
+	.card{
+		background:white;
+		color:black;
+		padding:15px;
+		width:32%;
+		float:left;
+		&.middle{margin:0 20px;}
+	}
+	.testimonial-img{
+		margin-bottom:25px;
+		img {margin:auto;}
+	}
+	h4{margin-top:15px;}
+}
