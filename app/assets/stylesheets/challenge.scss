@@ -28,6 +28,7 @@ section#about{
 	position:absolute;
 	left: 29%;
   top: 14%;
+  &.pull-left{left:34%}
 }
 
 .apply-btn{
@@ -52,6 +53,8 @@ section#about{
   transform: rotate(22deg);
 }
 
+img.offset-left{margin-left:30px;}
+
 section#testimonials{
 	.card{
 		background:white;
@@ -60,6 +63,8 @@ section#testimonials{
 		width:48%;
 		float:left;
 		&.first{margin-right:20px}
+		&.one{min-height:746px;}
+		&.two{min-height:485px;}
 	}
 	.testimonial-img{
 		margin-bottom:25px;
@@ -67,4 +72,27 @@ section#testimonials{
 		text-align:center;
 	}
 	h4{margin-top:15px;}
+}
+
+// mobile styling
+
+@media (max-width: 500px) {
+	.top-left-logo{
+		position: relative;
+		margin-left: 25%;
+		margin-top: -95px;
+	}	
+
+	.price{
+		left:21% !important;
+	}
+
+	.card{
+		width:100% !important;
+		margin-bottom:30px;
+		min-height:none !important;
+	}
+
+	img.offset-left{margin-left:0px;}
+
 }
