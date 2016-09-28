@@ -24,12 +24,15 @@ section#about{
 	}
 }
 
-.price{
-	position:absolute;
-	left: 29%;
-  top: 14%;
-  &.pull-left{left:34%}
+.challenge{
+	.price{
+		position:absolute;
+		left: 29%;
+	  top: 14%;
+	  &.pull-left{left:34%}
+	}	
 }
+
 
 .apply-btn{
 	margin-top:50px;
