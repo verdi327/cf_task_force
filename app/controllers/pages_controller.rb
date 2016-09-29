@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-	layout "no_nav_no_footer_layout", only: [:challenge]
+	layout "no_nav_no_footer_layout", only: [:challenge, :competitive_excellence_seminar]
 
 	def home
 		@coaches = Coach.order(priority: :asc)
@@ -15,4 +15,5 @@ class PagesController < ApplicationController
 	def thank_you;end
 	def ebook_library;end
 	def challenge;end
+	def competitive_excellence_seminar;end
 end
