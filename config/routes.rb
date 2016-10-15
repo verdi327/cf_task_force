@@ -38,6 +38,7 @@ Rails.application.routes.draw do
   get '/thank-you'     => 'pages#thank_you'
   get '6-week-challenge' => 'pages#challenge'
   get 'competitive-excellence-seminar' => 'pages#competitive_excellence_seminar'
+  get 'drop-in'        => 'pages#drop_in'
   get '/sitemap'       => 'pages#sitemap'
   match '/404', to: 'errors#file_not_found', via: :all
   match '/422', to: 'errors#unprocessable', via: :all
