@@ -17,4 +17,5 @@ class PagesController < ApplicationController
 	def challenge;end
 	def competitive_excellence_seminar;end
 	def drop_in;end
+	def checkins_for_charity;end
 end

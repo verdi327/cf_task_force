@@ -37,6 +37,7 @@ Rails.application.routes.draw do
   get '/get-started'   => 'pages#get_started'
   get '/thank-you'     => 'pages#thank_you'
   get '6-week-challenge' => 'pages#challenge'
+  get '/checkins-for-charity' => 'pages#checkins_for_charity'
   get 'competitive-excellence-seminar' => 'pages#competitive_excellence_seminar'
   get 'drop-in'        => 'pages#drop_in'
   get '/sitemap'       => 'pages#sitemap'
