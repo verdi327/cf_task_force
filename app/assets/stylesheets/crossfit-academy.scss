@@ -1,0 +1,120 @@
+.top-left-logo{
+	width:150px;
+	position:absolute;
+	top:10px;
+	left:25px;
+}
+
+.header-wrapper-ca{
+	margin-top:50px;
+	.intro-content{
+		margin-top:40px;
+		top:58%;
+	}
+}
+.header-ca{
+	color:white;
+	text-align:center;
+}
+
+section#about{
+	.info-box{
+		border:1px solid black;
+		padding:40px;
+		margin-bottom:20px;
+	}
+}
+
+section#learn{
+	.box{
+		border-top:3px solid black;
+		border-bottom:3px solid black;
+		border-left:1px solid black;
+		border-right:1px solid black;
+		min-height:300px;
+		p {text-align:left}
+	}
+}
+
+.academy{
+	.price{
+		position:absolute;
+		left: 26%;
+	  top: 14%;
+	  &.pull-left{left:34%}
+	}	
+}
+
+
+.apply-btn{
+	margin-top:50px;
+	padding:20px 0;
+	width:100%;
+}
+
+.strikeout {
+  font-size: 1.2em;
+  line-height: 1em;
+  position: relative;
+}
+.strikeout::after {
+  border-bottom: 0.125em solid red;
+  content: "";
+  left: 0;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: rotate(22deg);
+}
+
+img.offset-left{margin-left:30px;}
+
+section#testimonials{
+	.card{
+		background:white;
+		color:black;
+		padding:25px;
+		width:48%;
+		float:left;
+		&.first{margin-right:20px}
+		&.one{min-height:549px;}
+		// &.two{min-height:485px;}
+	}
+	.testimonial-img{
+		margin-bottom:25px;
+		img {margin:auto;}
+		text-align:center;
+	}
+	h4{margin-top:15px;}
+}
+
+section#academy-details{
+	h4{margin-bottom:0px}
+	p{margin-bottom:30px}
+}
+
+// mobile styling
+
+@media (max-width: 500px) {
+	.top-left-logo{
+		position: relative;
+		margin-left: 25%;
+		margin-top: -95px;
+	}	
+
+	.price{
+		left:21% !important;
+	}
+
+	.card{
+		width:100% !important;
+		margin-bottom:30px;
+		min-height:none !important;
+	}
+
+	img.offset-left{margin-left:0px;}
+
+}	
+
+
