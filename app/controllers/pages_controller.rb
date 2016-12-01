@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-	layout "no_nav_no_footer_layout", only: [:challenge, :crossfit_academy, :drop_in]
+	layout "no_nav_no_footer_layout", only: [:challenge_female, :challenge_male, :crossfit_academy, :drop_in]
 
 	def home
 		@coaches = Coach.order(priority: :asc)
@@ -14,7 +14,8 @@ class PagesController < ApplicationController
 	def refer_a_friend;end
 	def thank_you;end
 	def ebook_library;end
-	def challenge;end
+	def challenge_female;end
+	def challenge_male;end
 	def drop_in;end
 	def checkins_for_charity;end
 	def crossfit_academy;end

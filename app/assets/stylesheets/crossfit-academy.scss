@@ -70,28 +70,30 @@ section#learn{
 
 img.offset-left{margin-left:30px;}
 
-section#testimonials{
-	.card{
-		background:white;
-		color:black;
-		padding:25px;
-		width:48%;
-		float:left;
-		&.first{margin-right:20px}
-		&.one{min-height:549px;}
-		// &.two{min-height:485px;}
+.crossfit-academy{
+	section#testimonials{
+		.card{
+			background:white;
+			color:black;
+			padding:25px;
+			width:48%;
+			float:left;
+			&.first{margin-right:20px}
+			&.one{min-height:549px;}
+			// &.two{min-height:485px;}
+		}
+		.testimonial-img{
+			margin-bottom:25px;
+			img {margin:auto;}
+			text-align:center;
+		}
+		h4{margin-top:15px;}
 	}
-	.testimonial-img{
-		margin-bottom:25px;
-		img {margin:auto;}
-		text-align:center;
-	}
-	h4{margin-top:15px;}
-}
 
-section#academy-details{
-	h4{margin-bottom:0px}
-	p{margin-bottom:30px}
+	section#academy-details{
+		h4{margin-bottom:0px}
+		p{margin-bottom:30px}
+	}	
 }
 
 // mobile styling
