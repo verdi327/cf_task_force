@@ -2,6 +2,13 @@
 	input{color:white}
 }
 
+
+.intro-content.gs{
+	width:51%;
+	top:55%;
+}
+
+
 .topics-wrapper{
 	padding-left:30px;
 	h3{margin-top:0px;}
@@ -53,6 +60,9 @@
 .lead-source .dropdowns {float:left;}
 
 @media (max-width: 500px) {
+	.intro-content.gs{
+		width:100%;
+	}
 	.phone_number{text-align:left;}
 	span.phone-number{display:block;}
 	.lead-source{
