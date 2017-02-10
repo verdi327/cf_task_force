@@ -19,6 +19,14 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :services do 
+    collection do
+      get "personal-training"
+      get "group-training"
+      get "individual-design"
+      get "nutrition-planning"
+    end
+  end
   resources :leads, only: [:create]
   
   mount Buttercms::Engine => '/blog'
