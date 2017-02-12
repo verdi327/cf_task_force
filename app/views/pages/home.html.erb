@@ -33,17 +33,18 @@
                 <h3>Personal Training</h3>
                 <p>Individualized training led with the undivided attention of a coach</p>
             </div>
-            <div class="col-lg-3">
-                <a href="http://www.sfh.com/">
+            <div class="col-lg-3">    
+                <%= link_to :individual_design_services do %>
                     <img src="https://cftaskforce.files.wordpress.com/2016/01/individual-design.jpg">
-                </a>
+                <% end %>
+                
                 <h3>Individual Design</h3>
                 <p>Individualized training plan that can be completed on your own time</p>
             </div>
             <div class="col-lg-3">
-                <a href="http://www.sfh.com/">
+                <%= link_to :group_training_services do %>
                     <img src="https://cftaskforce.files.wordpress.com/2016/01/group-class1.png">
-                </a>
+                <% end %>
                 <h3>Group Training</h3>
                 <p>Small group classes led by a coach following the CrossFit methodology</p>
             </div>
@@ -123,7 +124,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12 wow fadeIn">
-                <h2>Become a Member Today</h2>
+                <h2>Success Stories</h2>
                 <hr class=" colored">
             </div>
         </div>
@@ -136,10 +137,10 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Schedule A Visit</h4>
+                                <h4>Alex H.</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Click the 'Get Started' link to schedule a free 30 minute athlete assessment where you'll discuss your goals with one of our trainers.</p>
+                                <p class="text-muted">Cigar City CrossFit is my favorite place to be.  I've worked out at a few other CrossFit gyms before and I can say hands down this has been my best experience.  From the facility, the coaches, programming and other members, I've really found my home away from home.</p>
                             </div>
                         </div>
                     </li>
@@ -229,94 +230,6 @@
         <div class="row">
             <div class="col-lg-12">
                 <div id="instafeed">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="testimonials bg-gray">
-    <div class="container wow fadeIn">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
-                <div class="testimonials-carousel">
-                    <%= render partial: "pages/testimonials/eileen" %>
-                    <%= render partial: "pages/testimonials/brayden" %>
-                    <%= render partial: "pages/testimonials/meghan" %>
-                    <%= render partial: "pages/testimonials/nick" %>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="pricing" class="pricing" style="background-image: url('https://cftaskforce.files.wordpress.com/2016/01/wall-back2.jpg')">
-    <div class="container-fluid wow fadeIn" style="padding-right:40px;padding-left:40px;">
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <h2>Pricing</h2>
-                <hr class="colored">
-                <p class="pricing-subtext">Size up our packages and see what works best for you</p>
-                <p>Active Duty Military or Student?  Inquire about our rates</p>
-            </div>
-        </div>
-        <div class="row content-row">
-            <div class="col-md-15">
-                <div class="pricing-item">
-                    <h3>Intramural</h3>
-                    <hr class="colored">
-                    <p>month to month</p>
-                    <div class="price"><span class="number"><sup>$</sup>179</span> / month</div>
-                    <ul class="list-group">
-                        <li class="list-group-item">Unlimited Classes</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-15">
-                <div class="pricing-item">
-                    <h3>Club</h3>
-                    <hr class="colored">
-                    <p>3 month contract</p>
-                    <div class="price"><span class="number"><sup>$</sup>169</span> / month</div>
-                    <ul class="list-group">
-                        <li class="list-group-item">Unlimited Classes</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-15">
-                <div class="pricing-item">
-                    <h3>Athlete</h3>
-                    <hr class="colored">
-                    <p>6 month contract</p>
-                    <div class="price"><span class="number"><sup>$</sup>159</span> / month</div>
-                    <ul class="list-group">
-                        <li class="list-group-item">Unlimited Classes</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-15">
-                <div class="pricing-item">
-                    <h3>Competitor</h3>
-                    <hr class="colored">
-                    <p>12 month contract</p>
-                    <div class="price"><span class="number"><sup>$</sup>149</span> / month</div>
-                    <ul class="list-group">
-                        <li class="list-group-item">Unlimited Classes</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-15">
-                <div class="pricing-item">
-                    <h3>Free Agent</h3>
-                    <hr class="colored">
-                    <p>punch card</p>
-                    <div class="price"><span class="number"><sup>$</sup>159</span> / month</div>
-                    <ul class="list-group">
-                        <li class="list-group-item">10 Classes</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-12" style="padding-left:10px;padding-right:10px;">
-                <div class="pricing-item">
-                    <h3>All of our packages grant you full access to our <span class="text-primary">15,000</span> sq ft facility and top notch individualized coaching</h3>
                 </div>
             </div>
         </div>
