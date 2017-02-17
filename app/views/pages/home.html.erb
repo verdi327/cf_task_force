@@ -83,27 +83,35 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2>Our Team</h2>
-                <p>Over 20+ years of CrossFit and strength and conditioning experience. Join our community and get RESULTS.</p>
+                <p>We're a bit biased, but we think we've got the best coaches around.  Watch their videos to learn more!</p>
                 <hr class="colored">
             </div>
         </div>
         <div class="row content-row">
-            <div class="col-lg-12">
-                <div class="about-carousel">
-                    <% @coaches.each do |coach| %>
-                        <div href="#profileModal-<%=coach.id%>" data-toggle="modal">
-                            <div class="item">
-                                <img src="<%= coach.images[0].url %>" class="img-responsive" alt="<%=coach.name%> Profile Picture">
-                                <div class="caption">
-                                    <h3><%= coach.name %></h3>
-                                    <hr class="colored">
-                                    <p><%= coach.title %></p>
-                                </div>
-                            </div>
-                        </div>    
-                    <% end %>
-                </div>
+            <div class="col-md-4">
+                <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/qL8PZZ8pwyA?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+                <h3>Coach Bunny</h3>
             </div>
+            <div class="col-md-4">
+                <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/aqD-J_KRkNw?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+                <h3>Coach Mike</h3>
+            </div>
+            <div class="col-md-4">
+                <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/XK1dRaEZaAk?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+                <h3>Coach Kristen</h3>
+            </div>
+        </div>
+        <div class="row content-row">
+            <div class="col-md-4">
+                <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/WzqJcQhF800?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+                <h3>Coach Melissa</h3>
+            </div>
+
+            <div class="col-md-4">
+                <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/FqJOL_2lvAQ?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+                <h3>Coach Blair</h3>
+            </div>
+
         </div>
     </div>
 </section>
@@ -133,7 +141,7 @@
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="https://cftaskforce.files.wordpress.com/2016/01/inside-gym.jpg">
+                            <img class="img-circle img-responsive" src="https://cftaskforce.files.wordpress.com/2016/01/alex-lifting-md.jpg">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -146,42 +154,42 @@
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="https://cftaskforce.files.wordpress.com/2016/01/coaching.jpg" alt="Coaching a class">
+                            <img class="img-circle img-responsive" src="https://cftaskforce.files.wordpress.com/2016/01/karen-headshot.jpg" alt="CrossFit Academy Instruction">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Free Workout With Us</h4>
+                                <h4>Karen A.</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">
-                                    No better way to get to know each other than training together.  Get a feel for our coaching, programming and community.
-                                </p>
+                                <p class="text-muted">I'm a bit older than the average CrossFitter, so I was nervous about starting.  But, the all the coaches are so welcoming and the energy at the gym is infectious.  I love my workout buddies and can't imagine training anywhere else.</p>
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="timeline">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="https://cftaskforce.files.wordpress.com/2016/01/crossfit-academy.jpg" alt="CrossFit Academy Instruction">
+                            <img class="img-circle img-responsive" src="https://cftaskforce.files.wordpress.com/2016/01/danny-headshot-md.jpg" alt="Coaching a class">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Enroll in CrossFit Academy</h4>
+                                <h4>Danny S.</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">If you're new to CrossFit or just want a refresher on the what, why and how of CrossFit, our CrossFit Academy course will set you up for success.</p>
+                                <p class="text-muted">
+                                    I started here about a year ago so I think enough time has passed where I can confidently say Cigar City CrossFit is objectively the best workout experience I've ever had.
+                                </p>
                             </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="https://cftaskforce.files.wordpress.com/2016/01/group.jpg" alt="Group CrossFit Class">
+                            <img class="img-circle img-responsive" src="https://cftaskforce.files.wordpress.com/2016/01/courtney-headshot.jpg" alt="Group CrossFit Class">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Join Our Group Programming</h4>
+                                <h4>Courtney B.</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Join any of our scheduled group classes or come in during open gym time. Easily find and reserve classes and track your results all from your mobile phone.</p>
+                                <p class="text-muted">Dang, I used to think working out consistently was hard.  I guess it is if you're stuck doing bicep curls at LA Fitness, but working out with all my new friends at Cigar City makes staying in shape the best part of my day. I love my new muscles. It's changed my focus from weight on the scale to weight on the bar! </p>
                             </div>
                         </div>
                     </li>
@@ -236,7 +244,7 @@
     </div>
 </section>
 
-<section id="drop-ins">
+<section id="drop-ins" class="bg-gray">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12">
@@ -277,11 +285,6 @@
         </div>
     </div>
 </section>
-
-<!-- profile modals -->
-<% @coaches.each do |coach| %>
-    <%= render partial: "profile_modal", locals: {coach: coach} %>
-<% end %>
 
 <!-- Thank you modal that shows after submitting Wodify lead form -->
 <%= render partial: "thank_you_modal" %>
