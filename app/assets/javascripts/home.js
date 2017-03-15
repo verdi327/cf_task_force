@@ -1,6 +1,6 @@
 $(".pages.home").ready(function() {
-  
-  // lazy load coach videos
+
+  // lazy load coach & testimonial videos
   var youtube = document.querySelectorAll( ".youtube" );
   
   for (var i = 0; i < youtube.length; i++) {
