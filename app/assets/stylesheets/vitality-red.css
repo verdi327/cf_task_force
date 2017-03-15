@@ -372,6 +372,11 @@ header .scroll-down .btn:hover {
     top:85%;
   }
 
+  @media (max-width: 300px) {
+    header .intro-content.home{top:50%;}
+    header .intro-content.home .btn.cta-btn{font-size:20px !important;}
+  }
+
   header .brand-name {
     font-size: 80px;
     line-height: 80px;
