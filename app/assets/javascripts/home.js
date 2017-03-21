@@ -1,10 +1,22 @@
 $(".pages.home").ready(function() {
 
+  // checking if mobile to switch bg-vid w/ img
+  var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
+  if (isMobile.matches === false) {
+    var iframeUrl = "<iframe src='https://www.youtube.com/embed/O1xdkY4QB4Y?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=O1xdkY4QB4Y' width='640' height='360' frameborder='0' allowfullscreen></iframe>"
+    $(".video-foreground").html(iframeUrl);
+  }
+
+  if (isMobile.matches) {
+    var bgimg = "https://i0.wp.com/cftaskforce.files.wordpress.com/2016/01/black-brick-background-min.jpg";
+    $('header').css('background-image', 'url(' + bgimg + ')');  
+  }
+
   // lazy load coach & testimonial videos
   var youtube = document.querySelectorAll( ".youtube" );
   
   for (var i = 0; i < youtube.length; i++) {
-    console.log(youtube[i]);
     var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
   
     var image = new Image();
