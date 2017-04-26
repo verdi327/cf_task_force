@@ -1,3 +1,17 @@
 // Place all the styles related to the services controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+img.special-img{
+	height:150px; 
+	position: absolute;
+	top: -5%;
+	left: 32%
+}
+
+@media (max-width: 500px) {
+	img.special-img{
+		top:-37% !important;
+	}
+}

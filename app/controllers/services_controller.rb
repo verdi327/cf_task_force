@@ -3,4 +3,5 @@ class ServicesController < ApplicationController
 	def individual_design;end
 	def group_training;end
 	def nutrition_planning;end
+	def crossfit_academy;end
 end
