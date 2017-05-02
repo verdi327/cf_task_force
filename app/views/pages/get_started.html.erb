@@ -10,7 +10,7 @@
        	<p>
        		Every client at Cigar City CrossFit has a unique prescription for exercise and nutrition. The prescription is 100% derived on each athlete’s goals and budget.
 				</p>
-       	<a href="#schedule-form-modal" data-toggle="modal" class="btn btn-lg btn-primary apply-btn">
+       	<a href="<%=book_your_consult_path%>" class="btn btn-lg btn-primary apply-btn">
        	Your Plan Begins with a consult
        	<i class="fa fa-arrow-right"></i>
        	</a>
@@ -70,24 +70,3 @@
 	    </div>
 	 </div>
 </section>
-
-<div class="portfolio-modal modal fade" id="schedule-form-modal" tabindex="-1" role="dialog" style="background:#222222" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="modal-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <h2>Book Your Intro Session</h2>
-                        <p>Let's meet face to face.  You'll get a chance to meet us, see the facility and talk about your goals.</p>
-                        <%= render partial: "schedule_once_intro_form" %>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
