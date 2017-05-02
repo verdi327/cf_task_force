@@ -45,6 +45,8 @@ Rails.application.routes.draw do
   get '/ebook-library' => 'pages#ebook_library'
   get '/get-started'   => 'pages#get_started'
   get '/thank-you'     => 'pages#thank_you'
+  get '/faqs'          => 'pages#faqs'
+  get '/book-your-consult' => "pages#book_your_consult"
   get 'women-only-6-week-challenge' => 'pages#challenge_female'
   get 'men-only-6-week-challenge' => 'pages#challenge_male'
   get '/checkins-for-charity' => 'pages#checkins_for_charity'

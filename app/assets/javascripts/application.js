@@ -41,3 +41,4 @@
 //= require social-share-button
 //= require admin/messages
 //= require tools/wendler
+//= require book-your-consult

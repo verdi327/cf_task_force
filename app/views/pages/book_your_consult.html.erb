@@ -1,0 +1,35 @@
+<% content_for :head_top do %>
+    <title>Book Your Consult</title>
+    <meta name="description" content="Book a 30 minute no sweat intro consult. We'll discuss your goals and how we can help.">
+<% end %>
+
+<header style="background-image: url('https://cftaskforce.files.wordpress.com/2016/01/book-your-consult-bg-min.png');">
+    <div class="intro-content">
+        <div class="brand-name">Book Your Consult<div>
+        <hr class="colored">
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2>Let's Find Some Time</h2>
+                <hr class="colored">
+            </div>
+        </div>
+        <div class="row content-row text-center">
+            <div class="col-lg-12" style="">
+                <div class="content">
+                    <p>
+                        This is a no sweat 30 minute consultation.  We'll talk about your goals and how we can best meet your needs.
+                    </p>
+
+                    <div class="row content-row text-center" style="margin-top:50px">
+                      <%= render "shared/schedule_once_embed_form" %>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

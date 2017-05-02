@@ -25,6 +25,13 @@
 </head>
 
 <%= render "shared/navbar" %>
+<script type="text/javascript">
+  $('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+</script>
 <body id="page-top" class="<%= controller_name %> <%= action_name %>">
   <%= yield %>
   <script id="dsq-count-scr" src="//cigarcitycrossfit.disqus.com/count.js" async></script>

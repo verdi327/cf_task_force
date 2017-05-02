@@ -22,7 +22,14 @@
                     <a class="page-scroll" href="#page-top"></a>
                 </li>
                 <li>
-                    <a href="/get-started" style="color:#ef4035">Get Started</a>
+                    <li class="dropdown">
+                      <a href="#" style="color:#ef4035" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Start Here <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><%= link_to "Getting Started", :get_started %></li>
+                        <li><%= link_to "Schedule", :schedule %></li>
+                        <li><%= link_to "FAQs", :faqs %></li>
+                      </ul>
+                    </li>
                 </li>
                 <li>
                     <a href="/wod">WOD</a>
