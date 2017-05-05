@@ -49,9 +49,7 @@ Rails.application.routes.draw do
   get '/book-your-consult' => "pages#book_your_consult"
   get 'women-only-6-week-challenge' => 'pages#challenge_female'
   get 'men-only-6-week-challenge' => 'pages#challenge_male'
-  get '/checkins-for-charity' => 'pages#checkins_for_charity'
   get 'drop-in'        => 'pages#drop_in'
-  get 'crossfit-academy' => 'pages#crossfit_academy'
   get '/sitemap'       => 'pages#sitemap'
   match '/404', to: 'errors#file_not_found', via: :all
   match '/422', to: 'errors#unprocessable', via: :all

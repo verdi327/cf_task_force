@@ -15,8 +15,6 @@ class PagesController < ApplicationController
 	def challenge_female;end
 	def challenge_male;end
 	def drop_in;end
-	def checkins_for_charity;end
-	def crossfit_academy;end
 	def faq;end
 	def book_your_consult;end
 end
