@@ -47,6 +47,7 @@ Rails.application.routes.draw do
   get '/thank-you'     => 'pages#thank_you'
   get '/faqs'          => 'pages#faqs'
   get '/book-your-consult' => "pages#book_your_consult"
+  get '/pricing' => "pages#pricing"
   get 'women-only-6-week-challenge' => 'pages#challenge_female'
   get 'men-only-6-week-challenge' => 'pages#challenge_male'
   get 'drop-in'        => 'pages#drop_in'

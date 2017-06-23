@@ -17,4 +17,5 @@ class PagesController < ApplicationController
 	def drop_in;end
 	def faq;end
 	def book_your_consult;end
+	def pricing;end
 end
