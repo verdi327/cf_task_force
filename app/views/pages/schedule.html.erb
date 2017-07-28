@@ -31,22 +31,15 @@
         <div class="row text-center">
             <div class="col-lg-12">
                 <h2>Pick Your Class</h2>
-                <p>all roads lead to a better you</p>
                 <hr class="colored">
-                <div class="class-options btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-secondary btn-responsive selected" data-type="all">All</button>
-                  <button type="button" class="btn btn-secondary btn-responsive" data-type="cf">CrossFit</button>
-                  <button type="button" class="btn btn-secondary btn-responsive" data-type="og">Open Gym</button>
-                </div>
             </div>
         </div>
-        <div class="row content-row">
-        	<div class="col-lg-12" style="text-align:center">
-                <div class="content">
-                    <%= render partial: "full_screen_schedule" %>
-                    <%= render partial: "small_screen_schedule" %>
-                </div>
-        	</div>
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <iframe src="https://cigarcitycrossfit.zenplanner.com/zenplanner/portal/calendar.cfm?frame=true" style="width:100%; height:500px;" onLoad="window.scroll(0,0);" frameborder="0" id="idZenPlannerFrame">
+                </iframe>
+                <script src="https://cigarcitycrossfit.zenplanner.com/zenplanner/skin/js/resize.js"></script>
+            </div>
         </div>
     </div>
 </section>
