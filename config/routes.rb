@@ -26,6 +26,8 @@ Rails.application.routes.draw do
       get "individual-design"
       get "nutrition-planning"
       get "crossfit-academy"
+      get "inbody-scan"
+      get "specialty-courses"
     end
   end
   resources :leads, only: [:create]

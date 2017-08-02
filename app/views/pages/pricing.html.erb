@@ -12,51 +12,73 @@
     </div>
 </header>
 
-<section>
-	<div class="container">
-	    <div class="row text-center">
-	        <div class="col-lg-12" style="color:#333">
-	        	<h2>Your Path Forward</h2>
-	          <hr class="colored">
-            <p>
-            	We offer the following coaching services to help you achieve your goals.
-            </p>
-	        </div>
-	        <div class="row content-row text-center">
-	    	    <%= link_to :personal_training_services, class: "services" do %>
-		    	    <div class="col-lg-3 offering">
-		    	        <img src="https://i2.wp.com/cftaskforce.files.wordpress.com/2016/01/personal-training-min.jpg">
+<section id="services">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12" style="color:#333">
+                <h2>What We Offer</h2>
+                <hr class="colored">
+                <p>
+                    You're unique and so should your training plan. We offer the following coaching services to help you achieve your goals.
+                </p>
+            </div>
+        </div>
+        <div class="row content-row text-center">    
+            <%= link_to :personal_training_services, class: "services" do %>
+                <div class="col-lg-4 offering">
+                    <img src="https://i2.wp.com/cftaskforce.files.wordpress.com/2016/01/personal-training-min.jpg">
 
-		    	    <h3>Personal Training</h3>
-		    	    <p>Individualized training led with the undivided attention of a coach</p>
-		    	    </div>
-	    	    <% end %>
-	        	
-	        	<%= link_to :individual_design_services, class: "services" do %>
-		        	<div class="col-lg-3 offering">    
-		        		<img src="https://i2.wp.com/cftaskforce.files.wordpress.com/2016/01/individual-design-min.jpg">
-		        	 	<h3>Individual Design</h3>
-		        	  <p>Individualized training plan that can be completed on your own time</p>
-		        	</div>
-	        	<% end %>
+                <h3>Personal Training</h3>
+                <p>Individualized training led with the undivided attention of a coach</p>
+                </div>
+            <% end %>
+            
+            <%= link_to :individual_design_services, class: "services" do %>
+                <div class="col-lg-4 offering">    
+                    <img src="https://i2.wp.com/cftaskforce.files.wordpress.com/2016/01/individual-design-min.jpg">
+                    
+                    
+                    <h3>Individual Design</h3>
+                  <p>Individualized training plan that can be completed on your own time</p>
+                </div>
+            <% end %>
 
-	        	<%= link_to :group_training_services, class: "services" do %>
-	        		<div class="col-lg-3 offering">  
-	        	  	<img src="https://i1.wp.com/cftaskforce.files.wordpress.com/2016/01/group-class-min_opimized.jpg">
-	        	    <h3>Group Training</h3>
-	        	   	<p>Small group classes led by a coach following the CrossFit methodology</p>
-	        		</div>
-	        	<% end %>
+            <%= link_to :group_training_services, class: "services" do %>
+                <div class="col-lg-4 offering">  
+                <img src="https://i1.wp.com/cftaskforce.files.wordpress.com/2016/01/group-class-min_opimized.jpg">
+                
+                <h3>Group Training</h3>
+                <p>Small group classes led by a coach following the CrossFit methodology</p>
+                </div>
+            <% end %>
+        </div>
+        <div class="row content-row text-center">
+            <%= link_to :nutrition_planning_services, class: "services" do %>
+                <div class="col-lg-4 offering">
+                <img src="https://i0.wp.com/cftaskforce.files.wordpress.com/2016/01/meal-plan-min.jpg">
+                
+                <h3>Nutrition Planning</h3>
+                <p>In person consultations mixed with monthly tasks to incrementally improve your nutrition</p>
+                </div>
+            <% end %>
 
-	        	<%= link_to :nutrition_planning_services, class: "services" do %>
-	        		<div class="col-lg-3 offering">
-	        	    <img src="https://i0.wp.com/cftaskforce.files.wordpress.com/2016/01/meal-plan-min.jpg">
-	        	    
-	        	    <h3>Nutrition Planning</h3>
-	        	    <p>Custom meal, grocery list and macronutrient planning </p>
-	        		</div>
-	        	<% end %>
-	        </div>
-	    </div>
-	 </div>
+            <%= link_to :inbody_scan_services, class: "services" do %>
+                <div class="col-lg-4 offering">
+                <img src="https://i1.wp.com/cftaskforce.files.wordpress.com/2016/01/inbody-2-min.jpg">
+                
+                <h3>InBody Scan</h3>
+                <p>Get your body fat, lean muscle mass, basal metabolic rate and more analyzed</p>
+                </div>
+            <% end %>
+
+            <%= link_to :specialty_courses_services, class: "services" do %>
+                <div class="col-lg-4 offering">
+                <img src="https://i0.wp.com/cftaskforce.files.wordpress.com/2016/01/gymnastic-2-min.jpg">
+                
+                <h3>Specialty Courses</h3>
+                <p>Six week courses that focus on either weightlifting, gymnastics or endurance training</p>
+                </div>
+            <% end %>
+        </div>
+    </div>
 </section>
