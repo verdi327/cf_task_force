@@ -18,4 +18,5 @@ class PagesController < ApplicationController
 	def faq;end
 	def book_your_consult;end
 	def pricing;end
+	def goal_review_session;end
 end
