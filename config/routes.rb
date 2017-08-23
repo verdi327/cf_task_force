@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   resources :services do 
     collection do
       get "personal-training"
-      get "group-training"
+      get "crossfit-classes"
       get "individual-design"
       get "nutrition-planning"
       get "crossfit-academy"
@@ -48,7 +48,7 @@ Rails.application.routes.draw do
   get '/get-started'   => 'pages#get_started'
   get '/thank-you'     => 'pages#thank_you'
   get '/faqs'          => 'pages#faqs'
-  get '/book-your-consult' => "pages#book_your_consult"
+  get '/book-your-no-sweat-intro' => "pages#book_your_no_sweat_intro"
   get '/pricing' => "pages#pricing"
   get 'women-only-6-week-challenge' => 'pages#challenge_female'
   get 'men-only-6-week-challenge' => 'pages#challenge_male'

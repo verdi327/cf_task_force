@@ -1,6 +1,6 @@
 <% content_for :head_top do %>
-    <title>Cigar City CrossFit | Tampa | Ybor | Channelside</title>
-    <meta name="description" content="Voted best CrossFit gym in Tampa, Brandon and Seminole Heights area. Get fit today!">
+    <title>Cigar City CrossFit</title>
+    <meta name="description" content="Whether you want to lose weight, build muscle or just look and feel better, we can help.  You don't have to be fit to start, just ready for change.">
 <% end %>
 
 <header>
@@ -11,7 +11,7 @@
     </div>
 
     <div class="intro-content home">
-        <%= link_to "Book Your No Sweat Intro", :book_your_consult, class: "btn cta-btn btn-primary" %>
+        <%= link_to "Book Your No Sweat Intro", :book_your_no_sweat_intro, class: "btn cta-btn btn-primary" %>
     </div>
 </header>
 
@@ -26,63 +26,7 @@
                 </p>
             </div>
         </div>
-        <div class="row content-row text-center">    
-            <%= link_to :personal_training_services, class: "services" do %>
-                <div class="col-lg-4 offering">
-                    <img src="https://i2.wp.com/cftaskforce.files.wordpress.com/2016/01/personal-training-min.jpg">
-
-                <h3>Personal Training</h3>
-                <p>Individualized training led with the undivided attention of a coach</p>
-                </div>
-            <% end %>
-            
-            <%= link_to :individual_design_services, class: "services" do %>
-                <div class="col-lg-4 offering">    
-                    <img src="https://i2.wp.com/cftaskforce.files.wordpress.com/2016/01/individual-design-min.jpg">
-                    
-                    
-                    <h3>Individual Design</h3>
-                  <p>Individualized training plan that can be completed on your own time</p>
-                </div>
-            <% end %>
-
-            <%= link_to :group_training_services, class: "services" do %>
-                <div class="col-lg-4 offering">  
-                <img src="https://i1.wp.com/cftaskforce.files.wordpress.com/2016/01/group-class-min_opimized.jpg">
-                
-                <h3>Group Training</h3>
-                <p>Small group classes led by a coach following the CrossFit methodology</p>
-                </div>
-            <% end %>
-        </div>
-        <div class="row content-row text-center">
-            <%= link_to :nutrition_planning_services, class: "services" do %>
-                <div class="col-lg-4 offering">
-                <img src="https://i0.wp.com/cftaskforce.files.wordpress.com/2016/01/meal-plan-min.jpg">
-                
-                <h3>Nutrition Planning</h3>
-                <p>In person consultations mixed with monthly tasks to incrementally improve your nutrition</p>
-                </div>
-            <% end %>
-
-            <%= link_to :inbody_scan_services, class: "services" do %>
-                <div class="col-lg-4 offering">
-                <img src="https://i1.wp.com/cftaskforce.files.wordpress.com/2016/01/inbody-2-min.jpg">
-                
-                <h3>InBody Scan</h3>
-                <p>Get your body fat, lean muscle mass, basal metabolic rate and more analyzed</p>
-                </div>
-            <% end %>
-
-            <%= link_to :specialty_courses_services, class: "services" do %>
-                <div class="col-lg-4 offering">
-                <img src="https://i0.wp.com/cftaskforce.files.wordpress.com/2016/01/gymnastic-2-min.jpg">
-                
-                <h3>Specialty Courses</h3>
-                <p>Six week courses that focus on either weightlifting, gymnastics or endurance training</p>
-                </div>
-            <% end %>
-        </div>
+        <%= render "service_offerings" %>
     </div>
 </section>
 
@@ -129,10 +73,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <span class="quote">Every pro was once an <span class="text-primary">amateur</span>. Every <span class="text-primary">expert</span> was once a <span class="text-primary">beginner</span>. So dream big and <span class="text-primary">start now</span>.</span>
+                <span style="font-size:50px;font-weight:52px;font-weight:500;display:block">You don't have to be <span class="text-primary">fit to start</span>.</span><span class="quote">All you need is a readiness for change and a willingness to keep showing up.</span>
 
                 <hr class=" colored">
-                <%= link_to "Book Your No Sweat Intro", :book_your_consult, class: "btn btn-outline-light"%>
+                <%= link_to "Book Your No Sweat Intro", :book_your_no_sweat_intro, class: "btn btn-outline-light btn-lg"%>
             </div>
         </div>
     </div>
@@ -171,7 +115,7 @@
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="https://cftaskforce.files.wordpress.com/2016/01/chris-headshot-min.jpg">
+                            <img class="img-circle img-responsive" src="https://cftaskforce.files.wordpress.com/2016/01/chris-headshot-min.jpg" alt="CrossFit athlete testimonial 1">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -184,7 +128,7 @@
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="https://i1.wp.com/cftaskforce.files.wordpress.com/2016/01/karen-headshot-min.jpg" alt="CrossFit Academy Instruction">
+                            <img class="img-circle img-responsive" src="https://i1.wp.com/cftaskforce.files.wordpress.com/2016/01/karen-headshot-min.jpg" alt="CrossFit athlete testimonial 2">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -197,7 +141,7 @@
                     </li>
                     <li class="timeline">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="https://cftaskforce.files.wordpress.com/2016/01/jonathan-squat-1-min.jpg" alt="Jonathan Profile Photo">
+                            <img class="img-circle img-responsive" src="https://cftaskforce.files.wordpress.com/2016/01/jonathan-squat-1-min.jpg" alt="CrossFit athlete testimonial 3">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -212,7 +156,7 @@
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="https://i2.wp.com/cftaskforce.files.wordpress.com/2016/01/courtney-headshot_optimized.jpg" alt="Group CrossFit Class">
+                            <img class="img-circle img-responsive" src="https://i2.wp.com/cftaskforce.files.wordpress.com/2016/01/courtney-headshot_optimized.jpg" alt="CrossFit athlete testimonial 4">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -244,17 +188,17 @@
         <div class="row content-row">
             <div class="col-md-4">
                 <h3>Google</h3>
-                <img src="https://cftaskforce.files.wordpress.com/2016/01/5-star.jpg" alt="5 star review">
+                <img src="https://cftaskforce.files.wordpress.com/2016/01/5-star.jpg" alt="Google 5 star review">
                 <!-- <p>(36 reviews)</p> -->
             </div>
             <div class="col-md-4">
                 <h3>Facebook</h3>
-                <img src="https://cftaskforce.files.wordpress.com/2016/01/5-star.jpg" alt="5 star review">
+                <img src="https://cftaskforce.files.wordpress.com/2016/01/5-star.jpg" alt="Facebook 5 star review">
                 <!-- <p>(128 reviews)</p> -->
             </div>
             <div class="col-md-4">
                 <h3>Yelp</h3>
-                <img src="https://cftaskforce.files.wordpress.com/2016/01/5-star.jpg" alt="5 star review">
+                <img src="https://cftaskforce.files.wordpress.com/2016/01/5-star.jpg" alt=" Yelp 5 star review">
                 <!-- <p>(56 reviews)</p> -->
             </div>
         </div>
