@@ -25,12 +25,30 @@ SitemapGenerator::Sitemap.create do
   #     add article_path(article), :lastmod => article.updated_at
   #   end
 
-  add '/wod', :changefreq => 'daily'      
-  add '/schedule', :changefreq => 'daily'
-  add '/contact-us', :changefreq => 'monthly'
-  add '/admin', :changefreq => 'yearly'    
-  add '/get-started', :changefreq => 'monthly'
-  add '/blog', :changefreq => 'weekly'
-  add '/shit-we-like', :changefreq => 'monthly'
-  add '/sitemap', :changefreq => 'monthly'
+add personal_training_services_path, :changefreq => "monthly", :priority => 0.5
+add crossfit_classes_services_path, :changefreq => "monthly", :priority => 0.5
+add individual_design_services_path, :changefreq => "monthly", :priority => 0.5
+add nutrition_planning_services_path, :changefreq => "monthly", :priority => 0.5
+add crossfit_academy_services_path, :changefreq => "monthly", :priority => 0.5
+add inbody_scan_services_path, :changefreq => "monthly", :priority => 0.5
+add specialty_courses_services_path, :changefreq => "monthly", :priority => 0.5
+
+add wod_path, :changefreq => "daily", :priority => 0.6
+add schedule_path, :changefreq => "monthly", :priority => 0.7
+add contact_us_path, :changefreq => "monthly", :priority => 0.7
+add shit_we_like_path, :changefreq => "monthly", :priority => 0.3
+add ebook_library_path, :changefreq => "monthly", :priority => 0.3
+add get_started_path, :changefreq => "weekly", :priority => 1
+add faqs_path, :changefreq => "monthly", :priority => 0.5
+add book_your_no_sweat_intro_path, :changefreq => "monthly", :priority => 1
+add pricing_path, :changefreq => "monthly", :priority => 0.9
+add sitemap_path, :changefreq => "monthly", :priority => 0.1
+add goal_review_session_path, :changefreq => "monthly", :priority => 0.6
+add blog_path, :changefreq => "weekly", :priority => 0.6
+add blog_rss_path, :changefreq => "monthly", :priority => 0.2
+add blog_atom_path, :changefreq => "monthly", :priority => 0.2
+
+
+#add all blog posts to sitemap
+add_to_index blog_sitemap_path, :changefreq => "weekly", :priority => 0.1
 end

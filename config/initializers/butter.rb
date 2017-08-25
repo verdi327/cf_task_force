@@ -1,3 +1,6 @@
+require 'buttercms-ruby'
+ButterCMS::api_token = ENV["BUTTER_TOKEN"]
+
 Buttercms.configure do |config|
   # If you added the Heroku Butter add-on, ENV["BUTTER_TOKEN"] will be defined.
   # Otherwise, grab your token at https://buttercms.com/api_token and either
@@ -14,3 +17,6 @@ Buttercms.configure do |config|
   # controller and tell Butter to use that with this config option.
   # config.parent_controller = "ApplicationController"
 end
+
+
+                        

@@ -3,22 +3,6 @@ Rails.application.routes.draw do
   get 'errors/unprocessable'
   get 'errors/internal_server_error'
 
-  namespace :admin do 
-    resources :coaches do 
-      resources :images, :only => [:create, :destroy]
-    end
-    resources :wods
-    resources :messages, only: [:index, :create, :new, :show]
-  end
-
-  namespace :tools do 
-    resources :wendlers, only: [:index, :create] do 
-      collection do 
-        get "results"
-      end
-    end
-  end
-
   resources :services do 
     collection do
       get "personal-training"
@@ -30,7 +14,6 @@ Rails.application.routes.draw do
       get "specialty-courses"
     end
   end
-  resources :leads, only: [:create]
   
   mount Buttercms::Engine => '/blog'
   # The priority is based upon order of creation: first created -> highest priority.
@@ -41,7 +24,6 @@ Rails.application.routes.draw do
   get '/wod'           => 'pages#wod'
   get '/schedule'      => 'pages#schedule'
   get '/contact-us'    => 'pages#contact_us'
-  get '/admin'         => 'admin/base#index'
   get '/shit-we-like'  => 'pages#shit_we_like'
   get '/refer-a-friend'=> 'pages#refer_a_friend'
   get '/ebook-library' => 'pages#ebook_library'
@@ -57,7 +39,6 @@ Rails.application.routes.draw do
   match '/404', to: 'errors#file_not_found', via: :all
   match '/422', to: 'errors#unprocessable', via: :all
   match '/500', to: 'errors#internal_server_error', via: :all
-  get '/tools' => 'tools/base#index'
   get '/goal-review-session' => 'pages#goal_review_session'
 
   # Example of regular route:

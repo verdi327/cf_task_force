@@ -1,38 +1,58 @@
 <% content_for :head_top do %>
-    <title>Cigar City CrossFit Sitemap Page</title>
-    <meta name="description" content="A list of all the important links on Cigar City CrossFit">
+    <title>Cigar City CrossFit Sitemap</title>
+    <meta name="description" content="A list of all the important links on the Cigar City CrossFit website">
 <% end %>
 
-<header style="background-image: url('https://cftaskforce.files.wordpress.com/2016/01/wall-back2.jpg');">
-    <div class="intro-content">
-        <div class="brand-name-intro">Sitemap<div>
-        <hr class="colored">
-        <div class="brand-name">Get There Faster</div>
-    </div>
-</header>
-
-<section>
-    <div class="container-fluid">
+<section class="bg-dark">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h1>Sitemap</h1>
+                <hr class="colored">
+            </div>
+        </div>
         <div class="row content-row">
-        	<div class="col-lg-12" style="text-align:center">
-                <h2>Top Level Navigation Links</h2>
-                <h3><%= link_to "About Us", "/" %></h3>
-                <h3><%= link_to "Get Started", get_started_path %></h3>
-                <h3><%= link_to "WOD Blog", wod_path %></h3>
-                <h3><%= link_to "Workout Schedule", schedule_path %></h3>
-                <h3><%= link_to "Pricing", pricing_path %></h3>
-                <h3><%= link_to "Contact Us", contact_us_path %></h3>
-                <h3><%= link_to "Shit We Like", shit_we_like_path %></h3>
-                <h3><%= link_to "Ebook Library", ebook_library_path %></h3>
-                <h3><%= link_to "Book a Goal Review Session", goal_review_session_path %></h3>
-                <h2>Blog Related Links</h2>
-                <h3><%= link_to "Blog", "/blog" %></h3>
-                <h3><%= link_to "Blog RSS", "/blog/rss" %></h3>
-                <h3><%= link_to "Blog Atom", "/blog/atom" %></h3>
-                <h3><%= link_to "Benjamin Bunn Blog Posts", "/blog/author/benjamin-bunn" %></h3>
-                <h3><%= link_to "Michael Verdi Blog Posts", "/blog/author/michael-verdi" %></h3>
-        		
-        	</div>
+            <div class="col-md-3">
+                <h3>About Us</h3>
+                <ul>
+                    <li><%= link_to "What is CrossFit", "/" %></li>
+                    <li><%= link_to "Get Started", get_started_path %></li>
+                    <li><%= link_to "Workout of the Day (WOD)", wod_path %></li>
+                    <li><%= link_to "CrossFit Class Schedule", schedule_path %></li>
+                    <li><%= link_to "Pricing", pricing_path %></li>
+                    <li><%= link_to "Contact Us", contact_us_path %></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><%= link_to "Personal Training", personal_training_services_path %></li>
+                    <li><%= link_to "CrossFit Classes", crossfit_classes_services_path %></li>
+                    <li><%= link_to "CrossFit Academy", crossfit_academy_services_path %></li>
+                    <li><%= link_to "Individual Design", individual_design_services_path %></li>
+                    <li><%= link_to "Nutrition Planning", nutrition_planning_services_path %></li>
+                    <li><%= link_to "InBody Scan", inbody_scan_services_path %></li>
+                    <li><%= link_to "Specialty Courses", specialty_courses_services_path %></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Resources</h3>
+                <ul>
+                    <li><%= link_to "Book a No Sweat Intro", book_your_no_sweat_intro_path %></li>
+                    <li><%= link_to "Book a Goal Review Session", goal_review_session_path %></li>
+                    <li><%= link_to "Book an InBody Scan", inbody_scan_services_path %></li>
+                    <li><%= link_to "Ebook Library", ebook_library_path %></li>
+                    <li><%= link_to "Shit We Like", shit_we_like_path %></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Blog</h3>
+                <ul>
+                    <li><%= link_to "All Articles", "/blog" %></li>
+                    <li><%= link_to "Blog RSS", "/blog/rss" %></li>
+                    <li><%= link_to "Blog Atom", "/blog/atom" %></li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>

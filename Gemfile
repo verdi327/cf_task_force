@@ -18,19 +18,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'buttercms'
+gem 'buttercms-rails'
 gem 'rails_12factor', group: :production
 gem 'puma'
 gem "font-awesome-rails"
 gem 'jquery-rails'
-gem "carrierwave", :github => "carrierwaveuploader/carrierwave"
-gem "fog-aws"
 gem 'mailgun_rails'
-gem "simple_calendar", "~> 2.0"
-gem 'social-share-button'
 gem 'sitemap_generator'
 gem 'faraday'
-gem 'sucker_punch'
-gem 'twilio-ruby' 
 gem 'kaminari'
 gem 'sinatra', :require => nil
 gem 'oj', '~> 2.12.14'
