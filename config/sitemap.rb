@@ -44,11 +44,13 @@ add book_your_no_sweat_intro_path, :changefreq => "monthly", :priority => 1
 add pricing_path, :changefreq => "monthly", :priority => 0.9
 add sitemap_path, :changefreq => "monthly", :priority => 0.1
 add goal_review_session_path, :changefreq => "monthly", :priority => 0.6
-add blog_path, :changefreq => "weekly", :priority => 0.6
-add blog_rss_path, :changefreq => "monthly", :priority => 0.2
-add blog_atom_path, :changefreq => "monthly", :priority => 0.2
+
+#blog paths
+add "/blog", :changefreq => "weekly", :priority => 0.6
+add "/blog/rss", :changefreq => "monthly", :priority => 0.2
+add "/blog/atom", :changefreq => "monthly", :priority => 0.2
 
 
 #add all blog posts to sitemap
-add_to_index blog_sitemap_path, :changefreq => "weekly", :priority => 0.1
+add_to_index "/blog/sitemap.xml", :changefreq => "weekly", :priority => 0.5
 end
