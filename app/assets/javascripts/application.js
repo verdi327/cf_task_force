@@ -35,10 +35,5 @@
 //= require plugins/bootstrap-multiselect
 //= require vitality
 //= require home
-//= require wod
-//= require schedule
 //= require get_started
-//= require social-share-button
-//= require admin/messages
-//= require tools/wendler
 //= require book-your-consult
