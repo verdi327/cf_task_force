@@ -5,13 +5,17 @@
 
 <header style="background-image: url('https://cftaskforce.files.wordpress.com/2016/01/wall-back2.jpg');">
     <div class="intro-content">
-        <h2>Recent <%= @name %> posts</h2>
+        <h1 class="brand-name"><%= @category.name %></h1>
         <hr class="colored">
+        <div class="brand-name-intro">Recent Posts<div>
     </div>
 </header>
 
 <section>
 	<div class="container">
-		<%= render partial: "blog/post", collection: @recent_posts %>
+	  <% @category.recent_posts.each do |post| %>
+	    <div><%= render :partial => 'buttercms/posts/post', :locals => {:post => post} %></div>
+	  <% end %>
 	</div>
 </section>
+

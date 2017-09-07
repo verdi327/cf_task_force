@@ -1,0 +1,25 @@
+<% content_for :head_top do %>
+    <title><%= content_for :html_title, "#{@author.first_name} #{@author.last_name}"%> - Blog Posts</title>
+    <meta name="description" content="<%= content_for :meta_description, @author.bio %>">
+<% end %>
+
+<header style="background-image: url('https://cftaskforce.files.wordpress.com/2016/01/depositphotos_40491777_m.jpg');">
+    <div class="intro-content">
+    		<% if @author.profile_image %>
+    		  <img src="<%= @author.profile_image %>" />
+    		<% end %>
+    		<hr class="colored">
+        <h1>Recent posts from  <%= @author.first_name %> <%= @author.last_name %></h1>
+    </div>
+</header>
+
+<section>
+	<div class="container">
+		<!-- Recent posts -->
+		
+	  <% @author.recent_posts.each do |post| %>
+	    <div><%= render :partial => 'buttercms/posts/post', :locals => {:post => post} %></div>
+	  <% end %>
+		
+	</div>
+</section>

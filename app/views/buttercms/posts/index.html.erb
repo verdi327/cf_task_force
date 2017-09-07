@@ -14,7 +14,24 @@
 
 <section>
 	<div class="container">
-		<%= render partial: "blog/post", collection: @recent_posts %>	
-		<%= render partial: "blog/pagers", locals: {next_page: @next_page, previous_page: @previous_page} %>
+		<!-- List of posts -->
+		<% @posts.each do |post| %>
+		  <%= render :partial => 'post', :locals => {:post => post} %>
+		<% end %>
+
+		<!-- Pagination links -->
+		<div>
+		  <% if @previous_page %>
+		    <%= link_to buttercms_blog_path(:page => @previous_page), class: "btn btn-lg btn-outline-dark" do %>
+		    	<i class="fa fa-arrow-left"></i> Prev
+		    <% end %>
+		  <% end %>
+
+		  <% if @next_page %>
+		  	<%= link_to buttercms_blog_path(:page => @next_page), class: "btn btn-lg btn-outline-dark" do %>
+		  		Next <i class="fa fa-arrow-right"></i>
+		  	<% end %>
+		  <% end %>
+		</div>
 	</div>
 </section>

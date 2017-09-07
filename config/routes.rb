@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+  
+  scope :module => 'buttercms' do
+    get '/categories/:slug' => 'categories#show', :as => :buttercms_category
+    get '/author/:slug' => 'authors#show', :as => :buttercms_author
+
+    get '/blog/rss' => 'feeds#rss', :format => 'rss', :as => :buttercms_blog_rss
+    get '/blog/atom' => 'feeds#atom', :format => 'atom', :as => :buttercms_blog_atom
+    get '/blog/sitemap.xml' => 'feeds#sitemap', :format => 'xml', :as => :buttercms_blog_sitemap
+
+    get '/blog(/page/:page)' => 'posts#index', :defaults => {:page => 1}, :as => :buttercms_blog
+    get '/blog/:slug' => 'posts#show', :as => :buttercms_post
+  end
+
   get 'errors/file_not_found'
   get 'errors/unprocessable'
   get 'errors/internal_server_error'
@@ -15,7 +28,6 @@ Rails.application.routes.draw do
     end
   end
   
-  mount Buttercms::Engine => '/blog'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

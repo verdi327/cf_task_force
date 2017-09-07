@@ -1,0 +1,30 @@
+<!-- This is the post partial used to display posts in the list view on the blog home page. -->
+
+<div class="post-preview">
+  <!-- Display the post title in a h2 tag -->
+  <h2 class="post-title">
+    <%= link_to post.title, buttercms_post_path(post.slug), :title => post.title %>
+  </h2>
+
+  <!-- Display the post byline (author, categories, publish date) -->
+  <p class="post-meta">
+    Posted by 
+    <%= link_to "#{post.author.first_name} #{post.author.last_name}", buttercms_author_path(post.author.slug) %>
+
+    <% post.categories.each do |category| %>
+    <span class="btn btn-outline-dark btn-label">
+    <%= link_to category.name, buttercms_category_path(category.slug), :title => category.name %>
+    </span>
+    <% end %>
+  </p>
+
+  <p class="post-summary">
+    <!-- Featured images don't have to be used but can add a nice visual to your posts. 
+    Here's a sample usage where we align it to the left of the summary text but use it however you'd like. -->
+    <%= image_tag(post.featured_image, :height => 100, :align => "left", :style => "padding: 10px") if post.featured_image %>
+
+    <p><%= post.summary %></p>
+  </p>
+</div>
+
+<hr style="margin-top:40px;margin-bottom:40px;">
