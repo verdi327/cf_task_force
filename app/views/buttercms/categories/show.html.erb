@@ -13,9 +13,22 @@
 
 <section>
 	<div class="container">
-	  <% @category.recent_posts.each do |post| %>
-	    <div><%= render :partial => 'buttercms/posts/post', :locals => {:post => post} %></div>
-	  <% end %>
+        <div class="col-md-8">
+            <% @category.recent_posts.each do |post| %>
+                <%= render :partial => 'buttercms/posts/post', :locals => {:post => post} %>
+            <% end %>
+        </div>
+        <div class="col-md-4">
+            <h2 style="padding-left:40px">Categories</h2>
+            <% @categories.each do |category| %>
+                <ul>
+                    <li class="btn btn-full btn-outline-dark">
+                        <%= link_to "#{category.name} (#{category.recent_posts.size})", buttercms_category_path(category.slug), :title => category.name %>
+                    </li>
+                </ul>
+            <% end %>
+        </div>
+	   
 	</div>
 </section>
 

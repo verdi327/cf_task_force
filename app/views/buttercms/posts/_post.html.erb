@@ -2,9 +2,9 @@
 
 <div class="post-preview">
   <!-- Display the post title in a h2 tag -->
-  <h2 class="post-title">
+  <h3 class="post-title">
     <%= link_to post.title, buttercms_post_path(post.slug), :title => post.title %>
-  </h2>
+  </h3>
 
   <!-- Display the post byline (author, categories, publish date) -->
   <p class="post-meta">
@@ -19,11 +19,14 @@
   </p>
 
   <p class="post-summary">
-    <!-- Featured images don't have to be used but can add a nice visual to your posts. 
-    Here's a sample usage where we align it to the left of the summary text but use it however you'd like. -->
-    <%= image_tag(post.featured_image, :height => 100, :align => "left", :style => "padding: 10px") if post.featured_image %>
-
-    <p><%= post.summary %></p>
+    <div class="row">
+      <div class="col-md-3">
+        <%= image_tag(post.featured_image, :height => 100) if post.featured_image %>
+      </div>
+      <div class="col-md-9">
+        <p><%= post.summary %></p>
+      </div>
+    </div>
   </p>
 </div>
 

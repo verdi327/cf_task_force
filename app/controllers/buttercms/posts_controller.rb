@@ -4,6 +4,7 @@ class Buttercms::PostsController < Buttercms::BaseController
 
     @next_page = @posts.meta.next_page
     @previous_page = @posts.meta.previous_page
+    @categories = ButterCMS::Category.all(include: "recent_posts", exclude_body: true)
   end
 
   def show

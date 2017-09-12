@@ -3,6 +3,10 @@
     <meta name="description" content="The Cigar City CrossFit blog focuses on delivering information to help you lose weight, build muscle, increase energy and be your best self.">
 <% end %>
 
+<style type="text/css">
+	h2 {margin-top:-40px; margin-bottom:40px;}
+</style>
+
 <header style="background-image: url('https://cftaskforce.files.wordpress.com/2016/01/rings-header.jpg');">
     <div class="intro-content">
         <h1 class="brand-name">The Blog</h1>
@@ -14,11 +18,27 @@
 
 <section>
 	<div class="container">
-		<!-- List of posts -->
-		<% @posts.each do |post| %>
-		  <%= render :partial => 'post', :locals => {:post => post} %>
-		<% end %>
+		<div class="row">
+			<div class="col-md-8">
+				<h2>Recent Posts</h2>
+				<!-- List of posts -->
+				<% @posts.each do |post| %>
+				  <%= render :partial => 'post', :locals => {:post => post} %>
+				<% end %>
+			</div>
 
+			<div class="col-md-4">
+				<h2 style="padding-left:40px">Categories</h2>
+				<% @categories.each do |category| %>
+					<ul>
+						<li class="btn btn-full btn-outline-dark">
+							<%= link_to "#{category.name} (#{category.recent_posts.size})", buttercms_category_path(category.slug), :title => category.name %>
+						</li>
+					</ul>
+				<% end %>
+			</div>
+		</div>
+		
 		<!-- Pagination links -->
 		<div>
 		  <% if @previous_page %>
