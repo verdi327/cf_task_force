@@ -33,7 +33,7 @@ add crossfit_academy_services_path, :changefreq => "monthly", :priority => 0.5
 add inbody_scan_services_path, :changefreq => "monthly", :priority => 0.5
 add specialty_courses_services_path, :changefreq => "monthly", :priority => 0.5
 
-add workout_path, :changefreq => "monthly", :priority => 0.6
+add workouts_path, :changefreq => "monthly", :priority => 0.6
 add schedule_path, :changefreq => "monthly", :priority => 0.7
 add contact_us_path, :changefreq => "monthly", :priority => 0.7
 add shit_we_like_path, :changefreq => "monthly", :priority => 0.3
