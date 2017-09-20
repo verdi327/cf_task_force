@@ -1,0 +1,15 @@
+.workout-card{
+	border: 1px solid black;
+}
+
+@media (min-width: 768px) {
+	.workout-card{
+		min-height:760px;
+	}
+}
+
+@media (max-width: 500px) {
+	.workout-card{
+		margin-bottom:50px;
+	}	
+}

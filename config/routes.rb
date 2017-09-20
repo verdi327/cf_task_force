@@ -33,7 +33,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'pages#home'
-  get '/wod'           => 'pages#wod'
+  get '/workouts'           => 'pages#workouts'
   get '/schedule'      => 'pages#schedule'
   get '/contact-us'    => 'pages#contact_us'
   get '/shit-we-like'  => 'pages#shit_we_like'

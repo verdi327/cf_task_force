@@ -3,7 +3,7 @@ class PagesController < ApplicationController
 
 	def home;end
 	
-	def wod;end
+	def workouts;end
 	def schedule;end
 	def contact_us;end
 	def get_started;end

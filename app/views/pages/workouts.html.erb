@@ -1,0 +1,165 @@
+<% content_for :head_top do %>
+    <title>Workout of the Day</title>
+    <meta name="description" content="View today's CrossFit workout also known as the WOD.  You can also see other athlete's results.">
+<% end %>
+
+<header style="background-image: url('https://cftaskforce.files.wordpress.com/2016/01/zfiqc5czrp.jpg');">
+    <div class="intro-content">
+        <h1 class="brand-name">Workouts</h1>
+        <hr class="colored">
+        <div class="brand-name-intro">this is how we train<div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <div class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <strong>Already a member?</strong> Log into Zen Planner on your mobile phone to view today's workout.
+        </div>
+
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2>Anatomy of a CrossFit Workout</h2>
+                <hr class="colored">
+            </div>
+        </div>
+        <div class="row content-row">
+            <p>
+                What exactly is a typical CrossFit workout like? Well, the answer is a bit of a moving target as one of the main ingredients to our training is variety.  We take the best elements of various disciplines and we combine them in unique and interesting ways every day to create workouts that test all aspects of your fitness.  By training CrossFit, you'll develop a strong, athletic build that is both capable and healthy, all while having fun along the way.
+            </p>
+            <p style="margin:30px 0;"></p>
+            <p>
+                But, there are reoccuring elements you will see when training at Cigar City CrossFit.  These elements include strength training, conditioning, skill development and mobility.  We focus on big, compound lifts like the squat, deadlift and presses to get strong.  Our conditioning is a mix of movements and intensities similar to circuit style training.  We also work on improving various skills.  By creating a learning environment, you're constantly challenged, which keeps you engaged and wanting to train more and more! Finally, mobility.  If you can't move pain-free, you have to wonder if you're even heathly. We spend time every session making sure we have full, healthy range of motion.
+            </p>
+        </div>
+
+        <p style="margin-top:50px;"></p>
+        <div class="row content-row">
+            <div class="col-md-3 col-sm-6">
+                <div class="text-center">
+                    <img src="<%= asset_path('weightlifting-course.svg') %>" style="height:140px" alt="weightlifting icon">
+                    <h3>Strength Training</h3>
+                </div> 
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="text-center">
+                    <img src="<%= asset_path('endurance-course.svg') %>" style="height:140px" alt="endurance icon">
+                    <h3>Conditioning</h3>
+                </div> 
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="text-center">
+                    <img src="<%= asset_path('gymnastics-course.svg') %>" style="height:140px" alt="gymnastics icon">
+                    <h3>Skill Development</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="text-center">
+                    <img src="<%= asset_path('mobility.svg') %>" style="height:140px" alt="person stretching icon">
+                    <h3>Mobility</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-gray">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2>Sample Workouts</h2>
+                <hr class="colored">
+                <p>Actual workouts we do in the gym <span class="text-primary">//</span> Workouts are all scalable to fit each athlete's ability <span class="text-primary">//</span> 90% of our athletes scale</p>
+            </div>
+
+        </div>
+
+        <div class="row content-row">
+            <div class="col-lg-4 col-sm-6 workout-card">
+                <h4>Str/Skill + Conditioning</h4>
+                <div class="well">
+                    Here is a typical workout where we warmup, do some strength work and then finish with a hard aerobic interval piece. On another day, we'd work a skill like double unders, kipping pull ups, or oly technique.
+                </div>
+                <p><strong>Warmup + Mobility</strong></p>
+                <p>
+                    3x Rounds</br>
+                    8x Deadlifts</br>
+                    8x Push Press</br>
+                    8x Kipping Pull-Ups</br>
+                    </br>
+                    Hip Mobility: Runner's Lunge/Frog/Pigeon</br>
+                    <i>*hold each for 1 min before switching</i>
+
+                </p>
+                <p><strong>Strength</strong></p>
+                <p>Back Squat: 3x8-10, 30X1, rest 2-3 minutes</p>
+                <p><strong>Conditioning</strong></p>
+                <p>
+                    5min Amrap</br>
+                    15x Wall Balls 24/20</br>
+                    20x Kettlebell Swings 53/35</br>
+                    30x Double Unders</br>
+                    </br>
+                    <i>*rest 2min, repeat 3x times</i></br>
+                    <i>*Gear 3 - Hard, but consistent</i>
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-6 workout-card">
+                <h4>Partner Workout</h4>
+                <div class="well">
+                    We love doing partner workouts. You really get to know someone when you're sweating together. Oh, and they push you to work harder and they're fun!
+                </div>
+                <p><strong>Warmup + Mobility</strong></p>
+                <p>
+                    For 6 Minutes</br>
+                    Row/Run 250m/200m</br>
+                    10x Air Squats</br>
+                    10x Push-Ups</br>
+                    </br>
+                    Shoulder Mobility: Banded int/ext rotation</br>
+                    <i>*20x reps each arm</i>
+
+                </p>
+                <p><strong>Conditioning</strong></p>
+                <p>
+                    For Time: In Teams of Two</br>
+                    55x Deadlifts 155/105</br>
+                    55x Cal Row</br>
+                    55x Wall Balls 24/20</br>
+                    55x Handstand Push-Ups</br>
+                    </br>
+                    <i>*split the work, only one partner working at a time</i></br>
+                    <i>*Gear 4 - Very hard, recover during rest</i></br>
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-6 workout-card">
+                <h4>Benchmark Workout</h4>
+                 <div class="well">
+                    About once a month we complete a test workout. These workouts have names like Fran, Cindy, Helen etc. We test so we can see empirically if we're getting better. No guessing!
+                </div>
+                <p><strong>Warmup + Mobility</strong></p>
+                <p>
+                    Run 400m</br>
+                    12x Ab Mat Situps</br>
+                    8x Kettlebell Swings</br>
+                    4x Kipping Pull-Ups</br>
+                    </br>
+                    P-Chain Mobility:</br>
+                    2x Rds</br>
+                    10x Single Leg Glute Bridges</br>
+                    10x Supermans</br>
+                    Dancer Stretch: Hold for 90sec each side
+                </p>
+                <p><strong>Conditioning</strong></p>
+                <p>
+                    Nancy - 5 Rounds for Time</br>
+                    400m Run</br>
+                    15x Overhead Squats 95/65</br>
+                    </br>
+                    <i>*It's a test, push yourself</i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
