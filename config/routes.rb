@@ -44,7 +44,7 @@ Rails.application.routes.draw do
   get '/faqs'          => 'pages#faqs'
   get '/book-your-no-sweat-intro' => "pages#book_your_no_sweat_intro"
   get '/pricing' => "pages#pricing"
-  get 'women-only-6-week-challenge' => 'pages#challenge_female'
+  get 'six-week-crossfit-challenge' => 'pages#six_week_crossfit_challenge'
   get 'men-only-6-week-challenge' => 'pages#challenge_male'
   get 'drop-in'        => 'pages#drop_in'
   get '/sitemap'       => 'pages#sitemap'

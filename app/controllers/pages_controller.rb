@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-	layout "no_nav_no_footer_layout", only: [:challenge_female, :challenge_male, :crossfit_academy, :drop_in]
+	layout "no_nav_no_footer_layout", only: [:six_week_crossfit_challenge, :challenge_male, :crossfit_academy, :drop_in]
 
 	def home;end
 	
