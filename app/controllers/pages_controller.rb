@@ -19,4 +19,5 @@ class PagesController < ApplicationController
 	def book_your_consult;end
 	def pricing;end
 	def goal_review_session;end
+	def nutrition_seminar;end
 end

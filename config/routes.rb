@@ -52,6 +52,7 @@ Rails.application.routes.draw do
   match '/422', to: 'errors#unprocessable', via: :all
   match '/500', to: 'errors#internal_server_error', via: :all
   get '/goal-review-session' => 'pages#goal_review_session'
+  get 'nutrition-challenge' => 'pages#nutrition_challenge'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
