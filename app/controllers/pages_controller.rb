@@ -19,5 +19,23 @@ class PagesController < ApplicationController
 	def book_your_consult;end
 	def pricing;end
 	def goal_review_session;end
-	def nutrition_seminar;end
+	def nutrition_seminar
+		if mobile_device?
+			# @form_width = 320
+			@mobile = true
+		else
+			# @form_width = 600
+			@mobile = false
+		end
+	end
+
+	private
+
+	def mobile_device?
+	  if session[:mobile_param]
+	    session[:mobile_param] == "1"
+	  else
+	    request.user_agent =~ /Mobile|webOS/
+	  end
+	end
 end
