@@ -37,3 +37,4 @@
 //= require home
 //= require get_started
 //= require book-your-consult
+//= require corporate-wellness

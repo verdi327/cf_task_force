@@ -53,6 +53,7 @@ Rails.application.routes.draw do
   match '/500', to: 'errors#internal_server_error', via: :all
   get '/goal-review-session' => 'pages#goal_review_session'
   get 'nutrition-challenge' => 'pages#nutrition_challenge'
+  get 'corporate-wellness' => 'pages#corporate_wellness'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

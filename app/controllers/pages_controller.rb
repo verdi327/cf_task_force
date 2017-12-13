@@ -20,6 +20,7 @@ class PagesController < ApplicationController
 	def pricing;end
 	def goal_review_session;end
 	def nutrition_seminar;end
+	def corporate_wellness;end
 
 
 end
