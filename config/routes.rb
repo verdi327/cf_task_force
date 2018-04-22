@@ -47,7 +47,6 @@ Rails.application.routes.draw do
   get 'six-week-crossfit-challenge' => 'pages#six_week_crossfit_challenge'
   get 'men-only-6-week-challenge' => 'pages#challenge_male'
   get 'drop-in'        => 'pages#drop_in'
-  get 'guest-inbody-scan'        => 'pages#guest_inbody_scan'
   get '/sitemap'       => 'pages#sitemap'
   match '/404', to: 'errors#file_not_found', via: :all
   match '/422', to: 'errors#unprocessable', via: :all

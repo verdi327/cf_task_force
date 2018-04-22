@@ -37,6 +37,9 @@ section#about{
 	}	
 }
 
+.apply-now-form{
+	background:blue;
+}
 
 .apply-btn{
 	margin-top:50px;
@@ -101,5 +104,11 @@ section#testimonials{
 	}
 
 	img.offset-left{margin-left:0px;}
+}
 
+.coach-text{
+	text-align: left;
+	padding-top: 10px;
+	margin-left: -100px;
+	width:95%;
 }
