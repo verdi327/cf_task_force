@@ -28,6 +28,7 @@ gem 'faraday'
 gem 'kaminari'
 gem 'sinatra', :require => nil
 gem 'oj', '~> 2.12.14'
+gem 'gibbon'
 
 
 # Use ActiveModel has_secure_password

@@ -10,7 +10,6 @@
     <div class="header-wrapper">
     <div class="header">
         <h1>6 Week Beach Body Challenge</h1>
-        <h4>Starts May 13th</h4>
         <p>Burn Fat. Build Strength. Find Your Best Self.</p>
     </div>
     
@@ -24,93 +23,8 @@
 </header>
 
 <div class="challenge">
-<section id="about">
-    <div class="container-fluid">
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <h2>Do You Have What It Takes?</h2>
-                <hr class="colored">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <div class="col-lg-6">
-                    <div class="info-box">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <%= fa_icon "check", class: "fa-2x" %>
-                            </div>
-                            <div class="col-md-10">
-                                Must be willing to commit to coming into the gym 3x per week.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-box">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <%= fa_icon "check", class: "fa-2x" %>
-                            </div>
-                            <div class="col-md-10">
-                                Must have the discipline to follow our nutrition plan.  This is critical.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-box">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <%= fa_icon "check", class: "fa-2x" %>
-                            </div>
-                            <div class="col-md-10">
-                                Must enjoy working in a group environment. The team environment will push you to work harder.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="info-box">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <%= fa_icon "check", class: "fa-2x" %>
-                            </div>
-                            <div class="col-md-10">
-                                Must have a love of learning. We'll be teaching you new moves and habits.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-box">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <%= fa_icon "check", class: "fa-2x" %>
-                            </div>
-                            <div class="col-md-10">
-                                Must leave ego at the door. The workouts will be hard, but doable.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-box">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <%= fa_icon "check", class: "fa-2x" %>
-                            </div>
-                            <div class="col-md-10">
-                                Must always keep a positive attitude and support other athletes. No negatives vibes.
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
 
-                <div class="col-lg-8 col-lg-offset-2">
-                    <a href="#schedule-form-modal" data-toggle="modal" class="btn btn-lg btn-outline-dark apply-btn">Apply Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="testimonials" class="bg-dark">
+<section id="testimonials">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12">
@@ -120,14 +34,14 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <img src="https://cftaskforce.files.wordpress.com/2017/11/before-after-male.jpg"></a>
+                <img class="img-responsive" src="https://cftaskforce.files.wordpress.com/2017/11/before-after-male.jpg"></a>
                 <div class="caption">
                     <h3>Steve R.</h3>
                     <p>I had been doing the same routine for so long I was bored.  And with work and travel my body fat started to rise steadily.  I made the decision to try this 6 week challenge and I'm loving my results.  The nutrition plan helped a ton as I often struggled to eat the right foods when traveling.  </p>
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="https://cftaskforce.files.wordpress.com/2017/11/before-and-after-female-1.jpg"></a>
+                <img class="img-responsive" src="https://cftaskforce.files.wordpress.com/2017/11/before-and-after-female-1.jpg"></a>
                 <div class="caption">
                     <h3>Mary H.</h3>
                     <p>Loved it! The group classes really motivated me to keep coming even when my body was sore.  The coaches are funny and knowledge and I accomplished things I didn't even think were possible for me (I still hate burpees!). Definitely recommend.</p>
@@ -135,7 +49,73 @@
             </div>
         </div>
         <div class="col-lg-8 col-lg-offset-2" style="margin-top:15px;">
-            <a href="#schedule-form-modal" data-toggle="modal" class="btn btn-lg btn-primary apply-btn">Apply Now</a>
+            <%= render "shared/lead_form" %>
+        </div>
+    </div>
+</section>
+
+<section id="social-proof" class="bg-dark">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2>The Internet Loves Us</h2>
+                <hr class="colored">
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="row content-row">
+                <div class="col-lg-4">
+                    <div class="info-box">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <%= fa_icon "star", class: "fa-2x" %>
+                            </div>
+                            <div class="text col-md-10">
+                                200+ 5-Star Reviews
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-box">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <%= fa_icon "thumbs-up", class: "fa-2x" %>
+                            </div>
+                            <div class="text col-md-10">
+                                1800+ Facebook Likes
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-box">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <%= fa_icon "instagram", class: "fa-2x" %>
+                            </div>
+                            <div class="text col-md-10">
+                                3000+ Instagram Followers
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row content-row">
+                <div class="col-lg-6">
+                    <img class="img-responsive" src="https://cftaskforce.files.wordpress.com/2017/11/screen-shot-2018-04-26-at-4-52-46-pm.png">
+                </div>
+
+                <div class="col-lg-6">
+                    <img class="img-responsive" src="https://cftaskforce.files.wordpress.com/2017/11/screen-shot-2018-04-26-at-4-53-02-pm.png" style="float:right">
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-lg-offset-2" style="margin-top:50px;">
+                <%= render "shared/lead_form" %>
+            </div>
+            
         </div>
     </div>
 </section>
@@ -183,39 +163,46 @@
         </div>
 
         <div class="col-lg-8 col-lg-offset-2">
-            <a href="#schedule-form-modal" data-toggle="modal" class="btn btn-lg btn-outline-dark apply-btn">Apply Now</a>
+            <%= render "shared/lead_form" %>
         </div>
     </div>
 </section>
 
-<section class="bg-dark">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <h2>The Internet Loves Us</h2>
-                <hr class="colored">
-            </div>
-        </div>
-        <div class="col-lg-12">
-            <div class="row">
-                <div class="col-lg-6">
-                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrochol%2Fposts%2F10155171802257521%3A0&width=500" width="500" height="429" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                </div>
-
-                <div class="col-lg-6">
-                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Felliott.quinones.7%2Fposts%2F1276279419066725%3A0&width=500" width="500" height="429" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
 
 <aside class="cta-quote" style="background-image: url('https://cftaskforce.files.wordpress.com/2016/01/crossfit-academy-bg-women.jpg');">
     <h2>The secret to getting ahead</h2>
     <h2>is getting started</h2>
 </aside>
 
+<section id="testimonials" class="bg-dark">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2>Ready To Be Our Next Success Story?</h2>
+                <hr class="colored">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-responsive" src="https://cftaskforce.files.wordpress.com/2017/11/before-after-steven.jpg">
+                <div class="caption">
+                    <h3>Steven L.</h3>
+                    <p>I was a competitive rower, but knew I needed to build more strength if I wanted to improve.  I signed up for the six week challenge and committed myself to following their eating plan and training 3x per week.  The workouts were hard but you kinda lose track of that because you just enjoy working out with everyone there.  If you're on the fence I highly recommend!</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="https://cftaskforce.files.wordpress.com/2017/11/before-after-2-a.jpg">
+                <div class="caption">
+                    <h3>Debbie K.</h3>
+                    <p>Being a bit older, I was definitely a bit intimidated by CrossFit style training but decided to give it a try after my daughter told me I would love it.  I met with Coach Verdi and he told me about the six week challenge and how the workouts could be scaled to my level. I gave it a go and I've loved it! I'm still scaling the workouts but I'm happy with my results so far!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2" style="margin-top:15px;">
+            <%= render "shared/lead_form" %>
+        </div>
+    </div>
+</section>
 
 <section class="bg-gray">
     <div class="container">
@@ -227,7 +214,7 @@
                 <h3 style="margin-top:0px">Michael and Ben - Owners, Cigar City CrossFit</h3>
 
                 <p>
-                    This challenge was created to help dedicated people get incredible results in six weeks.  We are trying to find the right men and women who will work hard, finish the full 6 weeks, and ultimately be an amazing representation of what is possible through CrossFit training.  If this sounds like something you would like to be a part of, fill out an application ASAP.  We always fill up quickly.  We look forward to meeting you in person very soon.
+                    This challenge was created to help dedicated people get incredible results in six weeks.  We are trying to find the right men and women who will work hard, finish the full 6 weeks, and ultimately be an amazing representation of what is possible through our training program.  If this sounds like something you would like to be a part of, fill out an application ASAP.  We always fill up quickly.  We look forward to meeting you in person very soon.
                 </p>
             </div>
         </div>

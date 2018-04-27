@@ -1,0 +1,10 @@
+<%= form_for @lead do |f| %>
+    <div class="form-fields">
+      <%= f.text_field :first_name, placeholder: "First Name", required: true %>
+      <%= f.email_field :email, placeholder: "Email", required: true %>
+      <%= f.telephone_field :phone_number, placeholder: "Phone Number", required: true %>
+    </div>
+    <div class="submit-field">
+        <%= f.submit "Apply Now", class: "btn btn-primary apply" %>
+    </div>
+<% end %>

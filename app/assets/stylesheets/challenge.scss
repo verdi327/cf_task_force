@@ -20,11 +20,15 @@
 	text-align:center;
 }
 
-section#about{
+section#social-proof{
 	.info-box{
 		border:1px solid black;
 		padding:40px;
 		margin-bottom:20px;
+		background:white;
+		color:black;
+		.fa{color:red;}
+		.text{margin-top:6px;}
 	}
 }
 
@@ -41,27 +45,16 @@ section#about{
 	background:blue;
 }
 
+// .submit-field{margin-top:10px;}
 .apply-btn{
-	margin-top:50px;
-	padding:20px 0;
 	width:100%;
 }
 
-.strikeout {
-  font-size: 1.2em;
-  line-height: 1em;
-  position: relative;
-}
-.strikeout::after {
-  border-bottom: 0.125em solid red;
-  content: "";
-  left: 0;
-  margin-top: calc(0.125em / 2 * -1);
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: rotate(22deg);
-}
+input{height:45px; color:black}
+input#lead_first_name{width:25%;}
+input#lead_email{width:45%;}
+input#lead_phone_number{width:28.6%;}
+input.btn.btn-primary.apply{width:100%; margin-top:20px;}
 
 img.offset-left{margin-left:30px;}
 
@@ -104,11 +97,8 @@ section#testimonials{
 	}
 
 	img.offset-left{margin-left:0px;}
-}
 
-.coach-text{
-	text-align: left;
-	padding-top: 10px;
-	margin-left: -100px;
-	width:95%;
+input#lead_first_name{width:100%}
+input#lead_email{width:100%}
+input#lead_phone_number{width:100%}
 }

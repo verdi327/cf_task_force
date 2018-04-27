@@ -21,6 +21,9 @@ class PagesController < ApplicationController
 	def goal_review_session;end
 	def nutrition_seminar;end
 	def corporate_wellness;end
+	def six_week_crossfit_challenge
+		@lead = Lead.new
+	end
 
 
 end
