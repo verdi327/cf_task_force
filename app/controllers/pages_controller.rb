@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-	layout "no_nav_no_footer_layout", only: [:six_week_crossfit_challenge, :challenge_male, :crossfit_academy, :drop_in]
+	layout "no_nav_no_footer_layout", only: [:six_week_crossfit_challenge, :challenge_male, :crossfit_academy, :drop_in, :cigar_city_invitational]
 
 	def home;end
 	
@@ -21,6 +21,7 @@ class PagesController < ApplicationController
 	def goal_review_session;end
 	def nutrition_seminar;end
 	def corporate_wellness;end
+	def cigar_city_invitational;end
 	def six_week_crossfit_challenge
 		@lead = Lead.new
 	end

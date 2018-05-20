@@ -1,0 +1,116 @@
+<% content_for :head_top do %>
+    <title>Cigar City Invitational</title>
+    <meta name="description" content="A low key weightlifting competition hosted by Cigar City CrossFit on Saturday, June 30th 2018.">
+<% end %>
+
+<header style="background-image: url('https://cftaskforce.files.wordpress.com/2017/11/mattie-rogers-jerk-bg.jpg');">
+    <a href="/">
+        <img src="<%=asset_path('logos/black-trans.png')%>" class="top-left-logo" alt="Cigar City CrossFit Logo">
+    </a>
+    
+    <div class="intro-content meet">
+        <div class="brand-name">The Cigar City Invitational</div>
+        <hr class="colored">
+        <div class="brand-name-intro">A Super Rad Weightlifting Meet</div>
+        <%= link_to "Yes, I want to lift", "https://www.picatic.com/205747", class: "btn btn-primary intro-btn"%>
+    </div>
+    
+</header>
+
+<section id="about">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2>Let's Lift Heavy Things.</h2>
+                <hr class="colored">
+                <p>Cigar City CrossFit is hosting a low key weightlifting meet</p>
+            </div>
+        </div>
+        
+        <div class="row content-row">
+            <div class="col-lg-4">
+                <img src="https://cftaskforce.files.wordpress.com/2017/11/snatch-1.jpg">
+            </div>
+            <div class="col-lg-4">
+                <img src="https://cftaskforce.files.wordpress.com/2017/11/snatch-2.jpg">
+            </div>
+            <div class="col-lg-4">
+                <img src="https://cftaskforce.files.wordpress.com/2017/11/snatch-3.jpg">
+            </div>
+        </div>
+
+        <div class="row content-row">
+            <p>
+                Whether you're a seasoned lifter looking for more competition reps or someone who has never competed in a weightlifting meet before, the Cigar City Invitational is for you.  We'll have weigh-ins, judges, platforms and colorful kilo plates but your results won't be USAW official.   There's no pressure on you.  Just show up, lift heavy and celebrate with an adult beverage afterwards.
+            </p>
+        </div>
+        <div class="row text-center">
+            <p class="cap">Participation is capped at 35 Men and 35 Females.</p>
+            <%= link_to "Hell Yes, Sign Me Up", "https://www.picatic.com/205747", class: "btn btn-primary intro-btn"%>
+        </div>
+    </div>
+</section>
+
+<aside class="cta-quote" id="charity" style="background-image: url('https://cftaskforce.files.wordpress.com/2017/11/assault-bike-bg.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p class="intro-text">All Revenue Earned Will Be Used to Buy...</p>
+                <h2>Assault Bikes</h2>
+                <p>That's right. Help us smoke up our athletes by giving the gift of unrelenting machine destruction.</p>
+            </div>
+        </div>
+    </div>
+</aside>
+
+
+<section class="bg-dark" id="seminar-details">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2>Meet Details</h2>
+                <hr class="colored">
+            </div>
+        </div>
+
+        <div class="row content-row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="row">
+                    <div class="well a">
+                        <h4>Hosted By</h4>
+                        <p>Cigar City CrossFit</p>
+
+                        <h4>When</h4>
+                        <p>Saturday, June 30th</p>
+
+                        <h4>Where</h4>
+                        <p>1703 N 24th St, Tampa, FL 33605</p>
+
+                        <h4>Details</h4>
+                        <p>Show up, lift heavy, celebrate</p>
+                    </div>
+
+                    <div class="well b">
+                        <h4>Schedule</h4>
+                        <p>7:00am-8:00am: Women's Weigh In</p>
+                        <p>8:00am-11:00am: Women's Session</p>
+                        <p>11:00am-12:00pm: Men's Weigh In</p>
+                        <p>12:00pm-3:00pm: Men's Session</p>
+
+                        <h4>Pricing</h4>
+                        <p>$39</p>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                <div class="cta-div">
+                    <%= link_to "Sign Me Up", "https://www.picatic.com/205747", class: "btn btn-outline-light"%>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Start Picatic widget embed -->
+<script async src="https://widget.picatic.com/latest/js/embed.min.js" id="picatic-widget-script"></script>
+<!-- End Picatic widget embed -->
+

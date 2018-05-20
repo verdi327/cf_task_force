@@ -1,0 +1,50 @@
+.intro-content.meet{
+	width:55%;
+	.intro-btn{
+		margin-top:85px;
+		font-size:25px;
+		width:65%;
+	}
+}
+
+#charity{
+	.intro-text{
+		font-size: 30px;
+	  font-weight: bold;
+	  font-family: Raleway;
+	  font-style: italic;
+	  margin-bottom: -21px;
+	}
+	h2{color:#c0392b}
+	p{font-size:20px; margin-top:85px;}
+}
+
+#about{
+	a.btn{
+		width: 50%;
+    font-size: 20px;
+    margin-top: 25px;
+	}
+	p.cap{
+		font-weight:bold;
+		margin-top: 20px;
+		margin-bottom: -15px;
+	}
+}
+
+#seminar-details{
+	.well{
+		background:#c0392b;
+		padding:45px;
+	}
+	.a{float:left}
+	.b{float:right}
+	.cta-div{
+		text-align:center;
+		a{
+			width: 50%;
+	    font-size: 20px;
+	    margin-top: 20px;
+		}
+	}
+}
