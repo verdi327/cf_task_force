@@ -48,3 +48,26 @@
 		}
 	}
 }
+
+	// mobile styling
+
+@media (max-width: 500px) {
+	.intro-content.meet{
+		width:100%;
+		.intro-btn{
+			width:95%;
+		}
+	}
+
+	#about{
+		p.main{padding:20px;}
+		a.btn{width:95%;}
+		img {margin-left:40px; margin-bottom:10px;}
+	}
+
+	#seminar-details{
+		.well{margin-left:20px;}
+		.well.b{float:left;}
+	}
+}
+
