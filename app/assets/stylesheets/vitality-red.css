@@ -368,10 +368,6 @@ header .scroll-down .btn:hover {
     transform: translate(-50%, -50%);
   }
 
-  header .intro-content.home{
-    top:85%;
-  }
-
   @media (max-width: 300px) {
     header .intro-content.home{top:50%;}
     header .intro-content.home .btn.cta-btn{font-size:20px !important;}
@@ -428,6 +424,16 @@ header .scroll-down .btn:hover {
   border:4px solid white;
 }
 
+/*home page*/
+
+.intro-content.home{
+  width:60%;
+  margin-top:11%;
+}
+
+.intro-content.home .brand-name-intro {
+  margin-top:45px;
+}
 /*header.video .overlay {
   position: absolute;
   height: 100%;
