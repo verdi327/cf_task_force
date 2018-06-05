@@ -434,6 +434,13 @@ header .scroll-down .btn:hover {
 .intro-content.home .brand-name-intro {
   margin-top:45px;
 }
+
+@media (max-width: 500px) {
+  .intro-content.home{
+    width:100%;
+  }
+}
+
 /*header.video .overlay {
   position: absolute;
   height: 100%;

@@ -12,7 +12,6 @@
 //
 //= require ga_tracking.min
 //= require facebook_pixel.min
-//= require rollbar
 //= require plugins/retina/retina.min 
 //= require jquery
 //= require jquery_ujs
@@ -38,3 +37,4 @@
 //= require get_started
 //= require book-your-consult
 //= require corporate-wellness
+//= require six_week_crossfit_challenge

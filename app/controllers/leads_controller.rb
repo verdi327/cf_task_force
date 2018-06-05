@@ -31,6 +31,7 @@ class LeadsController < ApplicationController
 
     respond_to do |format|
       if @lead.save
+        
         @lead.send_to_mailchimp
         format.html { redirect_to @lead, notice: 'Lead was successfully created.' }
         format.json { render :show, status: :created, location: @lead }
