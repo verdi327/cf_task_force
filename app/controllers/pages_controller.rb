@@ -26,5 +26,4 @@ class PagesController < ApplicationController
 		@lead = Lead.new
 	end
 
-
 end
