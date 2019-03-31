@@ -93,7 +93,7 @@ $(".pages.home").ready(function() {
   var feed = new Instafeed({
       get: 'user',
       userId: '2263654386',
-      accessToken: '2263654386.1677ed0.3d077995f6b94ac28d13c77361d45640',
+      accessToken: '2263654386.1677ed0.354c0759f55245b0b73de3a7d3b5af65',
       resolution: 'low_resolution',
       limit: 21,
       template: '<div class="portfolio identity">' +
