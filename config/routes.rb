@@ -52,6 +52,8 @@ Rails.application.routes.draw do
   match '/422', to: 'errors#unprocessable', via: :all
   match '/500', to: 'errors#internal_server_error', via: :all
   get '/goal-review' => 'pages#goal_review'
+  get '/membership-cancellation' => 'pages#membership_cancellation'
+  get '/membership-hold-request' => 'pages#membership_hold_request'
   get 'nutrition-challenge' => 'pages#nutrition_challenge'
   get 'corporate-wellness' => 'pages#corporate_wellness'
   get 'cigar-city-invitational' => 'pages#cigar_city_invitational'
