@@ -1,4 +1,4 @@
-class Lead < ActiveRecord::Base
+class Lead < ApplicationRecord
 
 	def send_to_mailchimp
 		gibbon = Gibbon::Request.new
