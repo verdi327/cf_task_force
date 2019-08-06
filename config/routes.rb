@@ -57,6 +57,7 @@ Rails.application.routes.draw do
   get 'nutrition-challenge' => 'pages#nutrition_challenge'
   get 'corporate-wellness' => 'pages#corporate_wellness'
   get 'cigar-city-invitational' => 'pages#cigar_city_invitational'
+  get 'begin-your-journey' => 'pages#begin_your_journey'
   resources :leads
 
   # Example of regular route:
