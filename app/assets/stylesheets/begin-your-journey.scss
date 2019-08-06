@@ -2,11 +2,25 @@ header.begin-your-journey {
   .intro-content {
     width: 100%;
     top: 45%;
+    .brand-name-intro {
+      margin: 0 15px;
+    }
   }
 }
 
 div.begin-journey {
   p {
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  header.begin-your-journey {
+    .intro-content {
+      .brand-name-intro {
+        margin: 0 15px;
+        font-size: 30px;
+      }
+    }
   }
 }
